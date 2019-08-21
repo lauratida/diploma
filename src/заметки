@@ -26,7 +26,7 @@
 
 Футер information
 
-
-margin-top: 3px
-letter-spacing: 0.2px
-margin-left: 12px
+margin-left: 19px;
+}
+.button_orange {
+    padding: 10px 23px 12px 22px;

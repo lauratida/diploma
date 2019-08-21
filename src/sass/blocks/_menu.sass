@@ -1,0 +1,149 @@
+// @media (max-width: 1205px)
+// @media (max-width: 992px)
+// @media (max-width: 768px)
+// @media (max-width: 567px)
+// @media (max-width: 420px)
+$transition-duration: 0.5s
+.menu
+  padding: 12px 0px 8px 15px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  position: relative
+  @media (max-width: 992px)
+    justify-content: flex-end
+  &__links
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+    @media (max-width: 992px)
+      flex-direction: column
+      position: absolute
+      // display: none
+      transform: scaleY(0)
+      transform-origin: 0 0
+      background-color: $color-white
+      padding: 10px
+      top: 0
+      left: 45px
+      z-index: 10
+    &_active
+      transform: scaleY(1)
+      transition: $transition-duration
+    & .menu__item
+      font-size: 13px
+      line-height: 25.05px
+      margin-left: 52px
+      position: relative
+      text-transform: uppercase
+      @media (max-width: 1205px)
+        margin-left: 10px
+        font-size: 12px
+      @media (max-width: 992px)
+        margin-left: 20px
+      &:first-child
+        margin-left: 0
+        @media (max-width: 992px)
+          margin-left: 20px
+      &:nth-child(4)
+        color: $color-button_add
+        & a:visited
+          color: $color-button_add
+        & a:hover
+          color: $color-button
+      &:after
+        content: ''
+        display: none
+        width: 50%
+        height: 1px
+        background-color: $color-button
+        position: absolute
+        left: 25%
+        bottom: -7px
+      & a:hover
+        color: $color-button
+      &:hover 
+        &:after
+          display: block
+          @media (max-width: 992px)
+            display: none
+
+.button
+  @media (max-width: 420px)
+    padding: 0
+    width: 100px
+.button__recall
+  margin-left: 5px
+.button__invite
+  margin-left: 19px
+  @media (max-width: 1205px)
+    margin-left: 25px
+  @media (max-width: 567px)
+    margin-left: 4px
+
+.toggle
+  &-button
+    width: 30px
+    height: 46px
+    background-color: $color-button
+    display: none
+    position: relative
+    margin-right: auto
+    @media (max-width: 992px)
+      display: block
+    & span
+      width: 15px
+      height: 2px
+      position: absolute
+      top: 50%
+      margin-top: -1px
+      left: 50%
+      margin-left: -9px
+      background-color: #d1d1d1
+      &:after
+        content: ''
+        display: inline-block
+        width: 10px
+        height: 2px
+        background-color: #d1d1d1
+        position: absolute
+        bottom: 10px
+        left: 0
+        transition: $transition-duration
+        // transform: rotate(45deg)
+      &:before
+        content: ''
+        display: inline-block
+        width: 20px
+        height: 2px
+        background-color: #d1d1d1
+        position: absolute
+        top: 10px
+        left: 0
+        transition: $transition-duration
+    &_active
+      & span
+        background-color: $color-button
+        &:after
+          transform: rotate(45deg)
+          transition: $transition-duration
+          width: 20px
+          top: 0
+        &:before
+          transform: rotate(-45deg)
+          transition: $transition-duration
+          width: 20px
+          top: 0
+
+.submenu
+  position: absolute
+  top: 43px
+  left: 0
+  z-index: 10
+  background-color: $color-white
+  opacity: 0.96
+  width: 1200px
+  height: 230px
+  transform: scaleY(1)
+  transition: $transition-duration
