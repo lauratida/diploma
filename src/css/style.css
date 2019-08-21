@@ -1,0 +1,286 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #1f1f1f;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #030303;
+}
+
+a:hover {
+  color: #838383;
+}
+
+@media (max-width: 992px) {
+  a:hover {
+    color: #030303;
+    cursor: default;
+  }
+}
+
+.bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.block {
+  display: block;
+}
+
+.container {
+  max-width: 1215px;
+  margin: auto;
+}
+
+@media (max-width: 1215px) {
+  .container {
+    max-width: 980px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 567px) {
+  .container {
+    max-width: 410px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    max-width: 277px;
+  }
+}
+
+.button {
+  background-color: #7dad4b;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #b0cf8f;
+}
+
+.input:focus {
+  border: 1px solid #7dad4b;
+  outline: none;
+}
+
+.wrap-line {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.logobar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 0px 12px 16px;
+  font-size: 14px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.logobar_footer {
+  border: none;
+}
+
+@media (max-width: 1215px) {
+  .logobar_footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 1215px) {
+  .logobar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .logobar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.logobar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1215px) {
+  .logobar__logo {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logobar__logo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10px;
+    height: 100px;
+  }
+}
+
+.logobar__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .logobar__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.logobar__subtitle {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.logobar__basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3px;
+}
+
+.logobar__basket-icon {
+  width: 14px;
+  height: 15px;
+}
+
+.logobar__basket-sum {
+  margin-left: 13px;
+}
+
+.logobar__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3px;
+  margin-left: 48px;
+}
+
+@media (max-width: 768px) {
+  .logobar__phone {
+    margin-left: 0;
+  }
+}
+
+.logobar__phone-icon {
+  width: 14px;
+  height: 15px;
+}
+
+.logobar__phone-number {
+  margin-left: 13px;
+}
+
+.logobar__desc {
+  max-width: 247px;
+  margin-left: 70px;
+}
+
+@media (max-width: 1215px) {
+  .logobar__desc {
+    margin-left: 153px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logobar__desc {
+    margin-left: 0;
+  }
+}
+
+.button_search {
+  outline: none;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: none;
+  margin-left: -36px;
+  margin-top: 1px;
+  z-index: 2;
+  cursor: pointer;
+  position: absolute;
+  right: 13px;
+  top: 20px;
+}
+
+@media (max-width: 768px) {
+  .button_search {
+    top: 68px;
+    right: 6px;
+  }
+}
+
+.input__search {
+  padding: 17px 0 15px 19px;
+  border: 1px solid #63564f;
+  min-width: 329px;
+  margin-left: 69px;
+}
+
+@media (max-width: 768px) {
+  .input__search {
+    margin-left: 0;
+    padding: 10px 0 10px 19px;
+    min-width: 238px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
