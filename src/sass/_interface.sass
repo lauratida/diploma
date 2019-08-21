@@ -1,0 +1,35 @@
+*
+  box-sizing: border-box
+body
+  +reg
+  color: $color-text_main
+img
+  max-width: 100%
+a 
+  text-decoration: none
+  color: $color-ahref
+.bold
+  +bold
+.block
+  display: block
+.container
+  max-width: 1170px
+  margin: auto
+.button
+  background-color: $main-color
+  border: none
+  +bold
+  color: $color-white
+  outline: none
+  &:hover
+    cursor: pointer
+    background-color: lighten($main-color, 20%)
+.input
+  &:focus
+    border: 1px solid $main-color
+    outline: none
+.section
+  &-title
+  &-subtitle
+
+

@@ -1,0 +1,169 @@
+.modal
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  display: none
+  // &_active
+  //   display: flex
+  &-dialog
+    margin: auto
+    max-width: 1170px
+    // height: 674px
+    // min-width: 400px
+    background-color: $white
+    position: relative
+    display: flex
+    &__close
+      position: absolute
+      top: 0
+      right: 0
+      width: 50px
+      height: 50px
+      border: none
+      background: $white
+      cursor: pointer
+      z-index: 100
+      outline: none
+.dialog
+  &-desc
+    flex-basis: 51.3%
+    display: flex
+    min-width: 600px
+    // justify-content: space-between
+    flex-direction: column
+    background-color: $modal-bg
+    padding: 80px 97px 61px 78px
+    color: $color-black
+    display: none
+    &__img
+      width: 120px
+      height: 85px
+      margin-left: 1px
+      margin-right: 28px
+    &-card
+      display: flex
+      align-items: center
+      margin-bottom: 15px
+      &:nth-child(3)
+        margin-bottom: 52px
+      &_top
+        align-items: flex-start
+      &-wrap
+        display: flex
+        flex-direction: column
+      &__title
+        margin: 0
+        +bold
+        letter-spacing: -0.5px
+        position: relative
+        margin-bottom: 20px
+        &:after
+          content: ''
+          width: 42px
+          height: 2px
+          position: absolute
+          bottom: -10px
+          left: 0
+          background-color: $main-color
+      &__text
+        margin-bottom: 2px
+        & strong
+          +bold
+    &-text
+      font-size: 14px
+      &__title
+        font-size: 14px
+        +bold
+        margin: 0
+      &__list
+        margin-top: 25px
+        padding-left: 22px
+        list-style: none
+      &__item
+        position: relative
+        margin-bottom: 9px
+        letter-spacing: -0.05px
+        &:after
+          content: url('../img/modal/listitem.png')
+          position: absolute
+          left: -22px
+          top: 0
+
+  &-form
+    position: relative
+    display: flex
+    flex-direction: column
+    padding: 74px 100px 73px 99px
+    text-align: center
+    min-width: 570px
+    // flex-basis: 48.7%
+    & input:last-of-type
+      margin-bottom: 26px
+    &__title
+      max-width: 340px
+      margin: 0 auto
+      +bold
+      line-height: 33px
+      font-size: 22px
+      margin-bottom: 36px
+    &__subtitle
+      margin: 0
+      margin-bottom: 42px
+      line-height: 35px
+    &__input
+      margin-bottom: 15px
+    &__button
+      font-size: 16px
+      padding: 26px 0
+      margin-left: 3.5px
+      margin-bottom: 29px
+    &__text
+      font-size: 15px
+      line-height: 20px
+      margin: auto
+      margin-bottom: 10px
+      max-width: 300px
+    &__phone
+      +bold
+      font-size: 24px
+      line-height: 24px
+      
+      // Модальное окно после отправки формы
+
+.modal-success
+  margin: auto
+  width: 670px
+  height: 200px
+  // min-width: 400px
+  background-color: $white
+  position: relative
+  // display: flex
+  text-align: center
+  padding: 74px 150px
+  line-height: 1.8
+  z-index: 99999
+
+.wrap-slider
+  position: relative
+.modal_active
+  display: flex
+.modal_arrows__left
+  position: absolute
+  top: 129px
+  left: 0
+  z-index: 999
+.modal_arrows__right
+  position: absolute
+  top: 129px
+  right: -14px
+  z-index: 999
+
+.slider_modal
+  width: 440px
+.room-desc
+  margin-top: 50px
+  max-width: 430px
+  font-size: 20px
