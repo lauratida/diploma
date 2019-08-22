@@ -51,7 +51,6 @@
 
   <!-- Меню -->
   <div class="container">
-    
     <nav class="menu">
       <a href="#" class="toggle-button"><span class="toggle-button__icon"></span></a>
       <ul class="menu__links">
@@ -174,44 +173,61 @@
       <button class="button button__recall">Обратный звонок</button>
     </nav>
   </div>
-  <!-- Слайдер под шапкой -->
-  
-      <div class="slider">
-        <div class="slider__item">
-          <div class="slider__img" srcprev="img/main-slider/slider-dot-1.jpg"><img src="img/main-slider/slider-image-1.jpg" alt=""></div>
-          <div class="container container-slider">
-            <div class="slider__desc"><h2 class="slider__title">Диван "Бурино"</h2> Мягкая мебель</div>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__img" srcprev="img/main-slider/slider-dot-2.jpg"><img src="img/main-slider/slider-image-2.jpg" alt=""></div>
-          <div class="container container-slider">
-            <div class="slider__desc"><h2 class="slider__title">Стол "Круг"</h2> Столовая</div>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__img" srcprev="img/main-slider/slider-dot-3.jpg"><img src="img/main-slider/slider-image-3.jpg" alt=""></div>
-          <div class="container container-slider">
-            <div class="slider__desc"><h2 class="slider__title">Картина "Пять"</h2>Декор</div>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__img" srcprev="img/main-slider/slider-dot-4.jpg"><img src="img/main-slider/slider-image-4.jpg" alt=""></div>
-          <div class="container container-slider">
-            <div class="slider__desc"><h2 class="slider__title">Кухня "Нет"</h2> Скажи нет еде</div>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__img" srcprev="img/main-slider/slider-dot-5.jpg"><img src="img/main-slider/slider-image-5.jpg" alt=""></div>
-          <div class="container container-slider">
-            <div class="slider__desc"><h2 class="slider__title">Кровать "Сон"</h2> Усни</div>
-          </div>
-        </div>  
-        </div>
-  
 
+  <!-- Слайдер под шапкой -->
+  <div class="slider">
+    <div class="slider__item">
+      <div class="slider__img" srcprev="img/main-slider/slider-dot-1.jpg"><img src="img/main-slider/slider-image-1.jpg" alt=""></div>
+      <div class="container container-slider">
+        <div class="slider__desc"><h2 class="slider__title">Диван "Бурино"</h2> Мягкая мебель</div>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__img" srcprev="img/main-slider/slider-dot-2.jpg"><img src="img/main-slider/slider-image-2.jpg" alt=""></div>
+      <div class="container container-slider">
+        <div class="slider__desc"><h2 class="slider__title">Стол "Круг"</h2> Столовая</div>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__img" srcprev="img/main-slider/slider-dot-3.jpg"><img src="img/main-slider/slider-image-3.jpg" alt=""></div>
+      <div class="container container-slider">
+        <div class="slider__desc"><h2 class="slider__title">Картина "Пять"</h2>Декор</div>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__img" srcprev="img/main-slider/slider-dot-4.jpg"><img src="img/main-slider/slider-image-4.jpg" alt=""></div>
+      <div class="container container-slider">
+        <div class="slider__desc"><h2 class="slider__title">Кухня "Нет"</h2> Скажи нет еде</div>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__img" srcprev="img/main-slider/slider-dot-5.jpg"><img src="img/main-slider/slider-image-5.jpg" alt=""></div>
+      <div class="container container-slider">
+        <div class="slider__desc"><h2 class="slider__title">Кровать "Сон"</h2> Усни</div>
+      </div>
+    </div>  
+  </div>
   
-<div class="test"></div>
+<!-- <div class="test"></div> -->
+
+  <!-- Секция с формой пригласить замерщика -->
+  <!-- section.forminvite>.forminvite__bg+.forminvite__img+form[method="POST"].forminvite__form>h2{Пригласить замерщика}.section__title.forminvite__title+h3{Отправьте заявку на замер и мы вместе расчитаем точную стоимость вашей новой мебели или кухни}.section__subtitle.forminvite__subtitle+input*2[placeholder="Как Вас зовут?" name="username" id="username" type="text"].forminvite__input.input -->
+  <section class="section forminvite">
+    <div class="forminvite__bg"></div>
+    <div class="container">
+      <div class="forminvite__wrap">
+        <div class="forminvite__img"><img src="img/invite/invite.jpg" alt=""></div>
+        <form action="" method="POST" class="form forminvite__form">
+          <h2 class="section__title forminvite__title">Пригласить замерщика</h2>
+          <h3 class="section__subtitle forminvite__subtitle">Отправьте заявку на замер и мы вместе расчитаем точную стоимость вашей новой мебели или кухни</h3>
+          <input type="text" placeholder="Как Вас зовут?" name="username" id="username" class="forminvite__input input">
+          <input type="tel" placeholder="Ваш номер телефона" name="userphone" id="userphone" class="forminvite__input input">
+          <input type="submit" value="Пригласить" name="formname" class="forminvite__submit">
+        </form>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Logobar из футера -->
   <div class="container">
@@ -239,6 +255,73 @@
       </div>
     </div>
   </div>
+
+  <!-- Меню в футере -->
+  <footer class="footer">
+    <div class="container">
+      <ul class="submenu">
+        <li class="submenu-category">
+          <a href="#" class="submenu-category__title">Кухня</a>
+          <ul class="submenu-category__list">
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Обеденные столы</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кухонные уголки</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Стулья</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Табуреты</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комплектующие</a></li>
+          </ul>
+        </li>
+        <li class="submenu-category">
+          <a href="#" class="submenu-category__title">Гостиная</a>
+          <ul class="submenu-category__list">
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">ТВ-тумбы</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Журнальные столы</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Мягкая мебель</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Стеллажи</a></li>
+          </ul>
+        </li>
+        <li class="submenu-category">
+          <a href="#" class="submenu-category__title">Спальня</a>
+          <ul class="submenu-category__list">
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комоды</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Тумбы прикроватные</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Туалетные столики</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кровати</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Матрасы</a></li>
+          </ul>
+        </li>
+        <li class="submenu-category">
+          <a href="#" class="submenu-category__title">Детская</a>
+          <ul class="submenu-category__list">
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Письменные столы</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Компьютерные столы</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кровати детские</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы детские</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комоды и тумбы</a></li>
+          </ul>
+        </li>
+        <li class="submenu-category">
+          <a href="#" class="submenu-category__title">Прихожая</a>
+          <ul class="submenu-category__list">
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Обувницы</a></li>
+            
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Зеркала</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Вешалки</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-information">
+      <div class="container">
+        <div class="footer-information-wrap">
+          <span class="footer-information__time">© 2008-2019 МебельLike Все права защищены</span>
+          <span class="footer-information__www">Создание сайта</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

@@ -1,0 +1,94 @@
+.forminvite
+  background-color: $section_bg
+  position: relative
+  padding-bottom: 109px
+  &:after
+    content: ''
+    position: absolute
+    right: 0
+    top: 0
+    background-color: $color-white
+    display: block
+    height: 92.6%
+    width: 64.85%
+    z-index: 1
+    @media (max-width: 992px)
+      display: none
+  &__wrap
+    display: flex
+    justify-content: flex-start
+    @media (max-width: 992px)
+      flex-direction: column
+  &__bg
+    position: absolute
+    width: 100%
+    height: 261px
+    background-color: $color-white
+    top: 156px
+    left: 0
+    @media (max-width: 992px)
+      display: none
+  &__img
+    margin-top: -25px
+    margin-left: 7px
+    min-width: 602px
+    z-index: 2
+    @media (max-width: 1205px)
+      min-width: 462px
+      max-width: 602px
+      height: 448px
+      overflow: hidden
+      & img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    @media (max-width: 992px)
+      margin: auto
+  &__form
+    margin-left: 106px
+    @media (max-width: 992px)
+      margin: auto
+      margin-top: 60px
+  &__title
+    margin-top: -5px
+    line-height: 35px
+    margin-bottom: 15px
+  &__subtitle
+    line-height: 25px
+    margin-bottom: 66px
+    position: relative
+    @media (max-width: 1205px)
+      margin-bottom: 44px
+    &:after
+      position: absolute
+      content: ''
+      display: block
+      width: 50px
+      height: 1px
+      background-color: $color-form_line
+      bottom: -32px
+      left: 166px
+      @media (max-width: 1205px)
+        bottom: -22px
+  &__input
+    width: 387px
+    height: 60px
+    border: 1px solid $color-black
+    background-color: $color-white
+    margin-bottom: 13px
+    padding-left: 27px
+  &__submit
+    outline: none
+    width: 198px
+    height: 50px
+    background-color: $color-button
+    border: none
+    margin: auto
+    margin-top: 18px
+.form
+  width: 387px
+  height: 410px
+  display: flex
+  flex-direction: column
+  z-index: 2
+  text-align: center

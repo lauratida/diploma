@@ -5,7 +5,7 @@
 // @media (max-width: 420px)
 $transition-duration: 0.5s
 .menu
-  padding: 12px 0px 10px 15px
+  padding: 0px 0px 0px 15px
   display: flex
   align-items: center
   justify-content: space-between
@@ -45,6 +45,12 @@ $transition-duration: 0.5s
       margin-left: 52px
       position: relative
       text-transform: uppercase
+      height: 67px
+      vertical-align: center
+      display: flex
+      align-items: center
+      & a
+        // display: inline-block
       @media (max-width: 1205px)
         margin-left: 10px
         font-size: 12px
@@ -70,7 +76,7 @@ $transition-duration: 0.5s
         background-color: $color-button
         position: absolute
         left: 25%
-        bottom: -7px
+        bottom: 12px
       & a:hover
         color: $color-button
       &:hover
@@ -161,7 +167,7 @@ $transition-duration: 0.5s
 
 .submenu
   position: absolute
-  top: 43px
+  top: 65px
   left: 0
   z-index: 10
   background-color: $color-white
@@ -174,7 +180,7 @@ $transition-duration: 0.5s
   list-style: none
   display: flex
   justify-content: space-between
-  padding: 32px 125px 33px 40px
+  padding: 32px 125px 11px 40px
   @media (max-width: 1205px)
     min-width: 964px
   @media (max-width: 992px)

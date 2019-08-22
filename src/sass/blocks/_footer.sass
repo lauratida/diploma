@@ -1,0 +1,54 @@
+.footer
+  background-color: $color-main_brown
+  & .submenu
+    padding: 38px 125px 0px 50px
+    transform: scaleY(1)
+    position: static
+    background-color: $color-main_brown
+    opacity: 1
+    margin-top: 0
+    z-index: 0
+    margin-bottom: 0
+    @media (max-width: 992px)
+      // display: none
+      padding: 0
+      // position: static
+      flex-direction: row
+      justify-content: space-around
+      flex-wrap: wrap
+      min-width: 0px
+      padding-left: 20px
+      transform: scaleY(1)
+      & .submenu-category__list
+        display: block
+    &-category
+      &__title
+        text-transform: uppercase
+        color: $color-white
+        +bold
+        font-size: 13px
+        letter-spacing: 0.33px
+        display: inline-block
+        margin-bottom: 28px
+        &:after
+          background-color: $color-white
+      &__link
+        color: $color-white
+      &__list
+        // margin: 0
+        padding: 0
+  &-information
+    background-color: $color-footer
+    width: 100%
+    &-wrap
+      display: flex
+      justify-content: space-between
+      height: 57px
+      align-items: center
+      padding: 0 154px 0 10px
+    &__time
+      display: block
+      color: $color-white
+    &__www
+      display: block
+      color: $color-white
