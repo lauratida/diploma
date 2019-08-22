@@ -46,10 +46,6 @@
       font-size: 16px
       line-height: 16px
       margin-bottom: 5px
-  &__img
-    // min-width: 768px
-    // img
-    //   height: 100%
 .slick-dots
   list-style: none
   height: 116px
@@ -78,6 +74,15 @@
   &__item
     position: relative
     margin-left: 7px
+    max-width: 116px
+    @media (max-width: 992px)
+      max-width: 90.2px
+    @media (max-width: 768px)
+      max-width: 66.2px
+    @media (max-width: 567px)
+      max-width: 40.2px
+    @media (max-width: 420px)
+      max-width: 21.6px
     &:hover
       cursor: pointer
       @media (max-width: 992px)

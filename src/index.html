@@ -186,25 +186,25 @@
         <div class="slider__item">
           <div class="slider__img" srcprev="img/main-slider/slider-dot-2.jpg"><img src="img/main-slider/slider-image-2.jpg" alt=""></div>
           <div class="container container-slider">
-            <div class="slider__desc"><h2 class="slider__title">Диван "Бурино"</h2> Мягкая мебель</div>
+            <div class="slider__desc"><h2 class="slider__title">Стол "Круг"</h2> Столовая</div>
           </div>
         </div>
         <div class="slider__item">
           <div class="slider__img" srcprev="img/main-slider/slider-dot-3.jpg"><img src="img/main-slider/slider-image-3.jpg" alt=""></div>
           <div class="container container-slider">
-            <div class="slider__desc"><h2 class="slider__title">Диван "Бурино"</h2> Мягкая мебель</div>
+            <div class="slider__desc"><h2 class="slider__title">Картина "Пять"</h2>Декор</div>
           </div>
         </div>
         <div class="slider__item">
           <div class="slider__img" srcprev="img/main-slider/slider-dot-4.jpg"><img src="img/main-slider/slider-image-4.jpg" alt=""></div>
           <div class="container container-slider">
-            <div class="slider__desc"><h2 class="slider__title">Диван "Бурино"</h2> Мягкая мебель</div>
+            <div class="slider__desc"><h2 class="slider__title">Кухня "Нет"</h2> Скажи нет еде</div>
           </div>
         </div>
         <div class="slider__item">
           <div class="slider__img" srcprev="img/main-slider/slider-dot-5.jpg"><img src="img/main-slider/slider-image-5.jpg" alt=""></div>
           <div class="container container-slider">
-            <div class="slider__desc"><h2 class="slider__title">Диван "Бурино"</h2> Мягкая мебель</div>
+            <div class="slider__desc"><h2 class="slider__title">Кровать "Сон"</h2> Усни</div>
           </div>
         </div>  
         </div>
@@ -246,19 +246,7 @@
   <script src="js/slick.min.js"></script>
   <script>
   $(document).ready(function () {
-    /* $('.slider').slick({ // это изначально slick слайдер для основного блока изображений
-        slidesToShow: 1,  // по одному слайдеру 
-        slidesToScroll: 1, // по одному менять
-        arrows:false, // включение стрелок (если не нужны false)
-        asNavFor: '.slider__dots' // указываем что навигация для слайдера будет отдельно (указываем класс куда вешаем навигацию)
-    });
-
-    $('.slider__dots').slick({ // настройка навигации
-        slidesToShow: 3, // указываем что нужно показывать 3 навигационных изображения
-        asNavFor: '.slider', // указываем что это навигация для блока выше
-        focusOnSelect: false // указываем что бы слайделось по клику
-    }); */
-
+    // Подключаем слайдер после шапки
     $('.slider').slick({
       arrows: false,
       dots: true,
@@ -268,6 +256,7 @@
         return '<img src="' + image + '" alt="" /> '
       }
     });
+    // Добавляем классы для стилизации созданным слайдером элементам
     $('.slick-dots').children().addClass('slick-dots__item');
     $(".slick-dots").wrap("<div class='container container-slider'></div>");
   });

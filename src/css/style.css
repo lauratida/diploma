@@ -917,6 +917,31 @@ a:hover {
 .slick-dots__item {
   position: relative;
   margin-left: 7px;
+  max-width: 116px;
+}
+
+@media (max-width: 992px) {
+  .slick-dots__item {
+    max-width: 90.2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slick-dots__item {
+    max-width: 66.2px;
+  }
+}
+
+@media (max-width: 567px) {
+  .slick-dots__item {
+    max-width: 40.2px;
+  }
+}
+
+@media (max-width: 420px) {
+  .slick-dots__item {
+    max-width: 21.6px;
+  }
 }
 
 .slick-dots__item:hover {
