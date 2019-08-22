@@ -5,7 +5,7 @@
 // @media (max-width: 420px)
 $transition-duration: 0.5s
 .menu
-  padding: 12px 0px 8px 15px
+  padding: 12px 0px 10px 15px
   display: flex
   align-items: center
   justify-content: space-between
@@ -77,6 +77,7 @@ $transition-duration: 0.5s
         & .submenu
           transform: scaleY(1)
           @media (max-width: 992px)
+            color: $color-ahref
             transform: scaleY(0) 
       
         &:after
@@ -234,12 +235,13 @@ $transition-duration: 0.5s
   &_active
     transform: rotate(90deg)
     transition: $transition-duration
-.menu__item 
+.menu__item
   &.menu__item_hover
-    & a:hover 
-      color: $color-ahref
+    // & a:hover 
+    //   color: $color-ahref
     & .submenu
       transform: scaleY(1) !important
 
-.menu__item
+.menu__links .menu__item a:hover
+  color: $color-ahref
   

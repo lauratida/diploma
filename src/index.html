@@ -9,13 +9,14 @@
   <!-- Подключение шрифтов -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <!-- Подключение стилей -->
-  <link rel="stylesheet" href="css/_normalize.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
 
 </head>
 <body>
 
-<!-- Logobar из шапки сайта -->
+  <!-- Logobar из шапки сайта -->
   <div class="wrap-line">
       <div class="container">
         <div class="logobar">
@@ -48,136 +49,171 @@
       </div>
   </div>
 
-<!-- Меню -->
-
-<div class="container">
+  <!-- Меню -->
+  <div class="container">
+    
+    <nav class="menu">
+      <a href="#" class="toggle-button"><span class="toggle-button__icon"></span></a>
+      <ul class="menu__links">
+        <li class="menu__item"><a href="katalog.php">Каталог </a>
+          <button class="button-addsubmenu button-addsubmenu_one">&gt;</button>
+          <ul class="submenu submenu_one">
+            <li class="submenu-category">
+              <a href="#" class="submenu-category__title">Кухня</a>
+              <ul class="submenu-category__list">
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Обеденные столы</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кухонные уголки</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Стулья</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Табуреты</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комплектующие</a></li>
+              </ul>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-category__title">Гостиная</a>
+              <ul class="submenu-category__list">
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">ТВ-тумбы</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Журнальные столы</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Мягкая мебель</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Стеллажи</a></li>
+              </ul>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-category__title">Спальня</a>
+              <ul class="submenu-category__list">
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комоды</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Тумбы прикроватные</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Туалетные столики</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кровати</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Матрасы</a></li>
+              </ul>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-category__title">Детская</a>
+              <ul class="submenu-category__list">
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Письменные столы</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Компьютерные столы</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кровати детские</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы детские</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комоды и тумбы</a></li>
+              </ul>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-category__title">Прихожая</a>
+              <ul class="submenu-category__list">
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Обувницы</a></li>
+                
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Зеркала</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Вешалки</a></li>
+              </ul>
+            </li>
+          </ul> <!-- submenu -->
+        </li>
+        <li class="menu__item"><a href="#">Услуги</a>
+          <button class="button-addsubmenu button-addsubmenu_one">&gt;</button>
+          <ul class="submenu">
+            <li class="submenu-category">
+              <a href="#" class="submenu-category__title">Сборка кухни</a>
+              <ul class="submenu-category__list">
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Обеденные столы</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кухонные уголки</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Стулья</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Табуреты</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комплектующие</a></li>
+              </ul>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-category__title">Сборка корпуса</a>
+              <ul class="submenu-category__list">
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">ТВ-тумбы</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Журнальные столы</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Мягкая мебель</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Стеллажи</a></li>
+              </ul>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-category__title">Доставка</a>
+              <ul class="submenu-category__list">
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комоды</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Тумбы прикроватные</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Туалетные столики</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кровати</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Матрасы</a></li>
+              </ul>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-category__title">Детская</a>
+              <ul class="submenu-category__list">
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Письменные столы</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Компьютерные столы</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кровати детские</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы детские</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комоды и тумбы</a></li>
+              </ul>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-category__title">Прихожая</a>
+              <ul class="submenu-category__list">
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Обувницы</a></li>
+                
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Зеркала</a></li>
+                <li class="submenu-category__item"><a href="#" class="submenu-category__link">Вешалки</a></li>
+              </ul>
+            </li>
+          </ul> <!-- submenu -->
+        </li>
+        <li class="menu__item"><a href="#">О магазине</a></li>
+        <li class="menu__item"><a href="#">Акции и распродажа</a></li>
+        <li class="menu__item"><a href="#">Доставка и оплата</a></li>
+        <li class="menu__item"><a href="#">Контакты</a></li>
+      </ul>
+      <button class="button button_orange button__invite">Вызвать замерщика</button>
+      <button class="button button__recall">Обратный звонок</button>
+    </nav>
+  </div>
+  <!-- Слайдер под шапкой -->
   
-  <nav class="menu">
-    <a href="#" class="toggle-button"><span class="toggle-button__icon"></span></a>
-    <ul class="menu__links">
-      <li class="menu__item"><a href="katalog.php">Каталог </a>
-        <button class="button-addsubmenu button-addsubmenu_one">&gt;</button>
-        <ul class="submenu submenu_one">
-          <li class="submenu-category">
-            <a href="#" class="submenu-category__title">Кухня</a>
-            <ul class="submenu-category__list">
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Обеденные столы</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кухонные уголки</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Стулья</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Табуреты</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комплектующие</a></li>
-            </ul>
-          </li>
-          <li class="submenu-category">
-            <a href="#" class="submenu-category__title">Гостиная</a>
-            <ul class="submenu-category__list">
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">ТВ-тумбы</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Журнальные столы</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Мягкая мебель</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Стеллажи</a></li>
-            </ul>
-          </li>
-          <li class="submenu-category">
-            <a href="#" class="submenu-category__title">Спальня</a>
-            <ul class="submenu-category__list">
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комоды</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Тумбы прикроватные</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Туалетные столики</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кровати</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Матрасы</a></li>
-            </ul>
-          </li>
-          <li class="submenu-category">
-            <a href="#" class="submenu-category__title">Детская</a>
-            <ul class="submenu-category__list">
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Письменные столы</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Компьютерные столы</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кровати детские</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы детские</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комоды и тумбы</a></li>
-            </ul>
-          </li>
-          <li class="submenu-category">
-            <a href="#" class="submenu-category__title">Прихожая</a>
-            <ul class="submenu-category__list">
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Обувницы</a></li>
-              
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Зеркала</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Вешалки</a></li>
-            </ul>
-          </li>
-        </ul> <!-- submenu -->
-      </li>
-      <li class="menu__item"><a href="#">Услуги</a>
-        <button class="button-addsubmenu button-addsubmenu_one">&gt;</button>
-        <ul class="submenu">
-          <li class="submenu-category">
-            <a href="#" class="submenu-category__title">Сборка кухни</a>
-            <ul class="submenu-category__list">
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Обеденные столы</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кухонные уголки</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Стулья</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Табуреты</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комплектующие</a></li>
-            </ul>
-          </li>
-          <li class="submenu-category">
-            <a href="#" class="submenu-category__title">Сборка корпуса</a>
-            <ul class="submenu-category__list">
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">ТВ-тумбы</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Журнальные столы</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Мягкая мебель</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Стеллажи</a></li>
-            </ul>
-          </li>
-          <li class="submenu-category">
-            <a href="#" class="submenu-category__title">Доставка</a>
-            <ul class="submenu-category__list">
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комоды</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Тумбы прикроватные</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Туалетные столики</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кровати</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Матрасы</a></li>
-            </ul>
-          </li>
-          <li class="submenu-category">
-            <a href="#" class="submenu-category__title">Детская</a>
-            <ul class="submenu-category__list">
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Письменные столы</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Компьютерные столы</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кровати детские</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы детские</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комоды и тумбы</a></li>
-            </ul>
-          </li>
-          <li class="submenu-category">
-            <a href="#" class="submenu-category__title">Прихожая</a>
-            <ul class="submenu-category__list">
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Обувницы</a></li>
-              
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Зеркала</a></li>
-              <li class="submenu-category__item"><a href="#" class="submenu-category__link">Вешалки</a></li>
-            </ul>
-          </li>
-        </ul> <!-- submenu -->
-      </li>
-      <li class="menu__item"><a href="#">О магазине</a></li>
-      <li class="menu__item"><a href="#">Акции и распродажа</a></li>
-      <li class="menu__item"><a href="#">Доставка и оплата</a></li>
-      <li class="menu__item"><a href="#">Контакты</a></li>
-    </ul>
-    <button class="button button_orange button__invite">Вызвать замерщика</button>
-    <button class="button button__recall">Обратный звонок</button>
-  </nav>
-</div>
+      <div class="slider">
+        <div class="slider__item">
+          <div class="slider__img" srcprev="img/main-slider/slider-dot-1.jpg"><img src="img/main-slider/slider-image-1.jpg" alt=""></div>
+          <div class="container container-slider">
+            <div class="slider__desc"><h2 class="slider__title">Диван "Бурино"</h2> Мягкая мебель</div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__img" srcprev="img/main-slider/slider-dot-2.jpg"><img src="img/main-slider/slider-image-2.jpg" alt=""></div>
+          <div class="container container-slider">
+            <div class="slider__desc"><h2 class="slider__title">Диван "Бурино"</h2> Мягкая мебель</div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__img" srcprev="img/main-slider/slider-dot-3.jpg"><img src="img/main-slider/slider-image-3.jpg" alt=""></div>
+          <div class="container container-slider">
+            <div class="slider__desc"><h2 class="slider__title">Диван "Бурино"</h2> Мягкая мебель</div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__img" srcprev="img/main-slider/slider-dot-4.jpg"><img src="img/main-slider/slider-image-4.jpg" alt=""></div>
+          <div class="container container-slider">
+            <div class="slider__desc"><h2 class="slider__title">Диван "Бурино"</h2> Мягкая мебель</div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__img" srcprev="img/main-slider/slider-dot-5.jpg"><img src="img/main-slider/slider-image-5.jpg" alt=""></div>
+          <div class="container container-slider">
+            <div class="slider__desc"><h2 class="slider__title">Диван "Бурино"</h2> Мягкая мебель</div>
+          </div>
+        </div>  
+        </div>
+  
 
+  
 <div class="test"></div>
 
-<!-- Logobar из футера -->
+  <!-- Logobar из футера -->
   <div class="container">
     <div class="logobar logobar_footer">
       <div class="logobar__logo">
@@ -207,6 +243,35 @@
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+  $(document).ready(function () {
+    /* $('.slider').slick({ // это изначально slick слайдер для основного блока изображений
+        slidesToShow: 1,  // по одному слайдеру 
+        slidesToScroll: 1, // по одному менять
+        arrows:false, // включение стрелок (если не нужны false)
+        asNavFor: '.slider__dots' // указываем что навигация для слайдера будет отдельно (указываем класс куда вешаем навигацию)
+    });
+
+    $('.slider__dots').slick({ // настройка навигации
+        slidesToShow: 3, // указываем что нужно показывать 3 навигационных изображения
+        asNavFor: '.slider', // указываем что это навигация для блока выше
+        focusOnSelect: false // указываем что бы слайделось по клику
+    }); */
+
+    $('.slider').slick({
+      arrows: false,
+      dots: true,
+      dotsClass: 'slick-dots slider__dots',
+      customPaging: function(slick, index) {
+        var image = $(slick.$slides[index]).find('.slider__img').attr('srcprev');
+        return '<img src="' + image + '" alt="" /> '
+      }
+    });
+    $('.slick-dots').children().addClass('slick-dots__item');
+    $(".slick-dots").wrap("<div class='container container-slider'></div>");
+  });
+  </script>
 
 </body>
 </html>
