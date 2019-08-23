@@ -1,0 +1,112 @@
+.stock
+  padding: 0 0 72px 0
+  @media (max-width: 420px)
+    padding-bottom: 54px
+  &-slider
+    &__item
+      position: relative
+      // height: 612px
+      
+
+    &__img
+      position: absolute
+      top: 0
+      left: 46.4%
+      max-width: 53.6%
+      height: 612px
+      overflow: hidden
+      @media (max-width: 1215px)
+        position: static
+        max-width: 1037px
+        height: 500px
+        margin-left: auto
+      @media (max-width: 768px)
+        height: 400px
+      
+      & img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__desc
+      padding: 1px
+      height: 612px
+      max-width: 513px
+      padding-left: 15px
+      @media (max-width: 1215px)
+        height: 432px
+      @media (max-width: 420px)
+        height: 444px
+    &__subtitle
+      // font-size: 32px
+      text-transform: uppercase
+      margin: 0
+      margin-top: 136px
+      font-size: 18px
+      margin-bottom: 36px
+      @media (max-width: 1215px)
+        margin-top: 46px
+      @media (max-width: 420px)
+        font-size: 18px
+    &__title
+      line-height: 36px
+      margin-bottom: 34px
+      @media (max-width: 420px)
+        font-size: 22px
+    &__text
+      font-size: 15px
+      line-height: 24px
+      max-width: 443px
+      letter-spacing: -0.1px
+      margin-bottom: 43px
+      @media (max-width: 420px)
+        padding: 0
+    &__buttons
+      display: flex
+      align-items: center
+    &__button
+      margin-right: 85px
+      @media (max-width: 567px)
+        margin-right: 35px
+      @media (max-width: 420px)
+        width: 147px
+        margin-right: 15px
+    &-dot
+      list-style: none
+      display: flex
+      margin: 0
+      padding-left: 16px
+      position: absolute
+      top: -20px
+      left: 0
+      @media (max-width: 1215px)
+        position: static
+        justify-content: center
+        margin: auto
+        margin-top: 40px
+      & li
+        font-size: 15px
+        line-height: 30px
+        text-transform: uppercase
+        margin-right: 32px
+        & a
+          color: $color-tabs_numbers
+      & .slick-active
+        +bold
+        & a
+          color: $color-text_main
+.detail
+  &__link
+  display: inline-block
+  color: $color-button
+.slick-slide
+  .detail-icon
+    display: inline
+    margin-left: 40px
+    @media (max-width: 420px)
+      margin-left: 15px
+
+.stock .slick-initialized .slick-slide
+  @media (max-width: 1215px)
+    display: flex
+    flex-direction: column-reverse
+    align-items: center
