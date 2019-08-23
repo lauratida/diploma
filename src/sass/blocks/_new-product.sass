@@ -1,0 +1,78 @@
+.new-product
+  text-align: center
+  padding-top: 74px
+  padding-bottom: 86px
+  &__title
+    margin-bottom: 6px
+    margin-left: 16px
+  &__subtitle
+    position: relative
+    margin-bottom: 59px
+    margin-left: 16px
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: 47px
+      height: 1px
+      background-color: $color-text_main
+      bottom: -19px
+      left: 33.2%
+  &__wrap
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    padding-left: 15px
+    @media (max-width: 992px)
+      justify-content: center
+  &__card
+    position: relative
+    height: 364px
+    margin-bottom: 19px
+    @media (max-width: 1215px)
+      width: 475px
+      height: 291px
+    @media (max-width: 992px)
+      width: 593px
+      height: 364px
+    @media (max-width: 768px)
+      width: 520px
+      height: 319px
+    @media (max-width: 567px)
+      width: 400px
+      height: 245px
+    @media (max-width: 420px)
+      width: 270px
+      height: 165px
+    &:nth-child(even)
+      margin-right: -2px
+    &:hover
+      & .new-product__text
+        background-color: $color-button
+        @media (max-width: 992px)
+          background-color: $color-main_brown
+  &__img
+  &__text
+    width: 207px
+    height: 47px
+    background-color: $color-main_brown
+    position: absolute
+    bottom: 31px
+    left: 25px
+    padding-top: 17px
+    @media (max-width: 1215px)
+      bottom: 23px
+    @media (max-width: 992px)
+      bottom: 31px
+    @media (max-width: 420px)
+      width: 167px
+      height: 34px
+      padding-top: 10px
+      bottom: 6px
+      left: 6px
+  &__button
+    vertical-align: center
+    padding-top: 13px
+    display: block
+    margin-top: 24px
+    margin-left: 17px

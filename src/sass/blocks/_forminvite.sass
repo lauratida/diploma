@@ -33,7 +33,7 @@
     margin-left: 7px
     min-width: 602px
     z-index: 2
-    @media (max-width: 1205px)
+    @media (max-width: 1215px)
       min-width: 462px
       max-width: 602px
       height: 448px
@@ -44,11 +44,17 @@
         object-fit: cover
     @media (max-width: 992px)
       margin: auto
+    @media (max-width: 567px)
+      min-width: 277px
+      max-width: 277px
+      height: 328px
   &__form
     margin-left: 106px
+    position: relative
     @media (max-width: 992px)
       margin: auto
       margin-top: 60px
+
   &__title
     margin-top: -5px
     line-height: 35px
@@ -77,6 +83,8 @@
     background-color: $color-white
     margin-bottom: 13px
     padding-left: 27px
+    @media (max-width: 420px)
+      width: 277px
   &__submit
     outline: none
     width: 198px
@@ -92,3 +100,5 @@
   flex-direction: column
   z-index: 2
   text-align: center
+  @media (max-width: 420px)
+    width: 277px

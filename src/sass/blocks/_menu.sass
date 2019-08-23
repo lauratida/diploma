@@ -1,4 +1,4 @@
-// @media (max-width: 1205px)
+// @media (max-width: 1215px)
 // @media (max-width: 992px)
 // @media (max-width: 768px)
 // @media (max-width: 567px)
@@ -12,6 +12,7 @@ $transition-duration: 0.5s
   position: relative
   @media (max-width: 992px)
     justify-content: flex-end
+    padding: 12px 0px 12px 15px
   @media (max-width: 768px)
     justify-content: center
   &__links
@@ -91,14 +92,13 @@ $transition-duration: 0.5s
           @media (max-width: 992px)
             display: none
 
-.button
-  @media (max-width: 420px)
-    // padding: 0
-    width: 100px
 .button__recall
   margin-left: 5px
   @media (max-width: 567px)
     line-height: 15.05px
+  @media (max-width: 420px)
+    // padding: 0
+    width: 100px
 .button__invite
   margin-left: 19px
   @media (max-width: 1205px)
@@ -108,6 +108,9 @@ $transition-duration: 0.5s
   @media (max-width: 567px)
     margin-left: 4px
     line-height: 15.05px
+  @media (max-width: 420px)
+    // padding: 0
+    width: 100px
 
 .toggle
   &-button
@@ -250,4 +253,5 @@ $transition-duration: 0.5s
 
 .menu__links .menu__item a:hover
   color: $color-ahref
-  
+.header
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.11)

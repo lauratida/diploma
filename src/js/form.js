@@ -1,7 +1,10 @@
 $(document).ready(function () {
   // Маска для телефона
   jQuery(function ($) {
-    $(".phone").mask("+7 (999) 999-99-99");
+    $("#userphone").mask("+7 (999) 999-99-99");
+  });
+  jQuery(function ($) {
+    $("#userphonei").mask("+7 (999) 999-99-99");
   });
   // Валидация формы и запуск ajax отрпавки при успешной обработке
   $('form').each(function () {
@@ -12,10 +15,6 @@ $(document).ready(function () {
           minlength: 2,
           maxlength: 15,
         },
-        usermail: {
-          required: true,
-          email: true,
-        },
         userphone: {
           required: true,
         }
@@ -25,10 +24,6 @@ $(document).ready(function () {
           required: "Заполните Имя",
           minlength: "Введите больше 2 символов",
           maxlength: "Введите меньше 15 символов",
-        },
-        usermail: {
-          required: "Заполните E-mail",
-          email: "Введите корректный e-mail"
         },
         userphone: {
           required: "Заполните номер телефона",
@@ -43,17 +38,16 @@ $(document).ready(function () {
           type: 'post',
           data: $(form).serialize(),
           success: function (data) {
-            yaCounter54884206.reachGoal('FormSubmit');
+            // yaCounter54884206.reachGoal('FormSubmit');
             // Очистка полей формы
-            $('#usernamed').val('');
-            $('#userphoned').val('');
+            $('#username').val('');
+            $('#userphone').val('');
 
-            $('#usernamem').val('');
-            $('#userphonem').val('');
+            $('#usernamei').val('');
+            $('#userphonei').val('');
 
-            $('#usernameb').val('');
-            $('#userphoneb').val('');
-            $('#usermailb').val('');
+            $('#usernamec').val('');
+            $('#userphonec').val('');
 
             // Вывод ответа в модальном окне
             $('#sucess-user').html(data);
@@ -75,12 +69,7 @@ $(document).ready(function () {
             console.log(jqXHR + ': ' + textStatus);
           },
         });
-
-
       }
-
-
     });
   });
-
 });

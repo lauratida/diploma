@@ -34,10 +34,6 @@ a
     max-width: 410px
   @media (max-width: 420px)
     max-width: 277px
-
-
-
-// Проверить
 .button
   background-color: $color-button
   border: none
@@ -60,6 +56,9 @@ a
       background-color: lighten($color-button_add, 20%)
       @media (max-width: 992px)
         background-color: $color-button_add
+  &_big
+    width: 217px
+    height: 50px
 
 .input
   &:focus
@@ -90,3 +89,7 @@ a
     line-height: 30px
     margin: 0
     +reg
+.center-items
+  display: flex
+  align-items: center
+  flex-direction: column

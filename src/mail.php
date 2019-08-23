@@ -7,7 +7,6 @@ $mail->CharSet = 'utf-8';
 $data = $_POST;
 $name = $data['username'];
 $phone = $data['userphone'];
-$email = $data['usermail'];
 $form = $data['formname'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
@@ -21,7 +20,7 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
 $mail->setFrom('html-tida@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('kalabanga12@yandex.ru');     // Кому будет уходить письмо 
+$mail->addAddress('html-tida@mail.ru');     // Кому будет уходить письмо 
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -42,4 +41,6 @@ if(!$mail->send()) {
   echo $data['username'];
   
 }
+// Для проверки окна благодарности
+// echo $data['username'];
 ?>

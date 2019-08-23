@@ -1,0 +1,111 @@
+.modal
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  display: none
+  z-index: 100
+  
+  
+  &_active
+    display: flex
+  &__close
+    position: absolute
+    top: 0
+    right: 0
+    width: 50px
+    height: 50px
+    border: none
+    background: $section_bg
+    cursor: pointer
+    z-index: 100
+    outline: none
+  &-invite
+    width: 1210px
+    // height: 600px
+    margin: auto
+    padding: 64px 20px
+    background-color: $section_bg
+    position: relative
+    @media (max-width: 1215px)
+      max-width: 980px
+    @media (max-width: 992px)
+      max-width: 540px
+      padding: 60px 20px
+      padding-bottom: 40px
+    @media (max-width: 768px)
+      max-width: 540px
+    @media (max-width: 567px)
+      max-width: 410px
+      padding: 60px 12px 40px 12px
+    @media (max-width: 420px)
+      max-width: 301px
+    & .modal__close
+      background-color: $color-white
+      @media (max-width: 992px)
+        background-color: $section_bg
+    & .forminvite__wrap
+      margin: auto
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        right: -20px
+        top: -64px
+        background-color: $color-white
+        display: block
+        height: 121.6%
+        width: 64.85%
+        @media (max-width: 992px)
+          display: none
+      & .forminvite__img
+        min-width: 200px
+        @media (max-width: 992px)
+          display: none
+      & .forminvite__form
+        margin-top: 0
+.modal-success
+  margin: auto
+  width: 670px
+  height: 200px
+  // min-width: 400px
+  background-color: $section_bg
+  position: relative
+  // display: flex
+  text-align: center
+  padding: 74px 150px
+  line-height: 1.8
+  z-index: 99999
+  border: 2px solid $color-darkgreen
+  @media (max-width: 768px)
+    width: 470px
+    padding: 63px 130px
+  @media (max-width: 567px)
+    width: 370px
+    padding: 63px 80px
+  @media (max-width: 420px)
+    width: 277px
+    height: 150px
+    padding: 42px 40px
+.treatment
+  &:after
+    position: absolute
+    content: ''
+    display: block
+    width: 10%
+    height: 2px
+    top: 50%
+    left: 45%
+    background-color: $color-darkgreen
+    @media (max-width: 768px)
+      top: 45%
+    @media (max-width: 567px)
+      width: 20%
+      left: 39%
+    @media (max-width: 420px)
+      top: 46%
+
+#modal1
+  z-index: 90
