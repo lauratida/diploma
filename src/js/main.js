@@ -9,11 +9,22 @@ $(document).ready(function () {
   // Открытие и закрытие отдельных пунктов бургер меню
   $('.button-addsubmenu').on('click', function(e) {
     e.preventDefault;
-    $(this).toggleClass('button-addsubmenu_active');
-    // $(".submenu").toggleClass('submenu_active');
-    $(this).siblings('.submenu').toggleClass('submenu_active');
-    // $('.menu__item').toggleClass('menu__item_hover');
-    $(this).parent().toggleClass('menu__item_hover');
+    if($(this).hasClass('button-addsubmenu_active')) {
+      $(this).toggleClass('button-addsubmenu_active');
+      $(this).siblings('.submenu').toggleClass('submenu_active');
+      $(this).parent().toggleClass('menu__item_hover');
+    }else{
+      $('.button-addsubmenu').removeClass('button-addsubmenu_active');
+      $('.submenu').removeClass('submenu_active');
+      $('.menu__item').removeClass('button-addsubmenu_active');
+      $(this).toggleClass('button-addsubmenu_active');
+      $(this).siblings('.submenu').toggleClass('submenu_active');
+      $(this).parent().toggleClass('menu__item_hover');
+    };
+
+
+    // $('.submenu').removeClass('submenu_active');
+    
   });
 
   // Подключаем слайдер после шапки
@@ -22,7 +33,7 @@ $(document).ready(function () {
     dots: true,
     dotsClass: 'slick-dots slider__dots',
     customPaging: function(slick, index) {
-      var image = $(slick.$slides[index]).find('.slider__img').attr('srcprev');
+      var image = $(slick.$slides[index]).find('.slider__img').attr('data-srcprev');
       return '<img src="' + image + '" alt="" /> '
     }
   });
@@ -38,10 +49,6 @@ $(document).ready(function () {
     dots: true,
     fade: true,
     dotsClass: 'stock-slider-dot',
-    // customPaging: function(slick, index) {
-    //   var image = $(slick.$slides[index]).find('.slider__img').attr('srcprev');
-    //   return '<img src="' + image + '" alt="" /> '
-    // },
     appendDots: $('.stock-slider__dots'),
     customPaging : function(slider, i) {
         var thumb = $(slider.$slides[i]).data();
@@ -59,11 +66,37 @@ $(document).ready(function () {
     dotsClass: 'mention-slider-dot',
     appendDots: $('.mention__slider-dots'),
     customPaging: function(slick, index) {
-      var image = $(slick.$slides[index]).find('.mention-card__text').attr('dotimg');
-      var name = $(slick.$slides[index]).find('.mention-card__text').attr('dotname');
-      var addres = $(slick.$slides[index]).find('.mention-card__text').attr('dotaddres');
+      var image = $(slick.$slides[index]).find('.mention-card__text').attr('data-dotimg');
+      var name = $(slick.$slides[index]).find('.mention-card__text').attr('data-dotname');
+      var addres = $(slick.$slides[index]).find('.mention-card__text').attr('data-dotaddres');
 
       return '<img src="' + image + '" alt=""><span class="block"><span class="bold block">' + name + '</span>' + addres + '</span>'
     }
   });
+  // Плюс минус кнопки на карточке товаров
+  $('.minus').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+  });
+  $('.plus').click(function () {
+    var $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+  });
+
+  $('.footer-submenu-category__title').on('click', function(e) {
+    e.preventDefault;
+    $('.mobail-footer__menu').html('');
+    $(this).siblings('.submenu-category__list').clone().appendTo('.mobail-footer__menu');
+    return false;
+  }); 
 });
+
+
+// var text = $(this).siblings('.submenu-category__list').html();
+//     console.log(text);

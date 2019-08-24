@@ -38,16 +38,6 @@ $(document).ready(function(){
     }
   });
 
-
-  // modal.on('click', function(){
-  //   modal.removeClass('modal_active');
-  // });
-  // $('#modal').click(function() {
-  //   if ($(event.target).closest('#modal').length == 0) {
-  //       $(this).removeClass('modal_active');
-  //   }                    
-  // });
-
   $('#scrollbutton').on('click', function(){
     // сперва получаем позицию элемента относительно документа
     var scroll = $('#scroll').offset().top;
@@ -93,6 +83,15 @@ $(document).ready(function(){
     $('#forminvite__subtitle').html('Отправьте заявку на замер и мы вместе расчитаем точную стоимость вашей новой мебели или кухни');
     $('#forminvite__submit').val('Вызывать замерщика');
     $('#formimg').attr('src','img/invite/invite.jpg');
+  });
+  // Подгрузка новых карточек по клику на показать еще
+  var viewmore = $('#viewmore')
+  
+  viewmore.on('click', function(event){
+    event.preventDefault();
+    $('.catalog-products').append('<div class="minicard__more"></div>');
+    $('.minicard__more').load("minicard.html");
+    $('.minicard__more').children('.minicard-wrap-position').unwrap();
   });
 
 });

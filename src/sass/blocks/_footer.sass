@@ -1,7 +1,8 @@
 .footer
   background-color: $color-main_brown
+  padding: 40px 0 0px 0
   & .submenu
-    padding: 38px 125px 0px 50px
+    padding: 0px 124px 14px 60px
     transform: scaleY(1)
     position: static
     background-color: $color-main_brown
@@ -19,8 +20,10 @@
       min-width: 0px
       padding-left: 20px
       transform: scaleY(1)
-      & .submenu-category__list
-        display: block
+      // & .submenu-category__list
+      //   display: block
+      @media (max-width: 420px)
+        flex-direction: column
     &-category
       &__title
         text-transform: uppercase
@@ -28,8 +31,10 @@
         +bold
         font-size: 13px
         letter-spacing: 0.33px
-        display: inline-block
+        display: none
         margin-bottom: 28px
+        @media (min-width: 769px)
+          display: inline-block
         &:after
           background-color: $color-white
       &__link
@@ -37,6 +42,12 @@
       &__list
         // margin: 0
         padding: 0
+        @media (max-width: 992px)
+          display: block
+          margin-bottom: 30px
+        @media (max-width: 768px)
+          display: none
+          margin-bottom: 0
   &-information
     background-color: $color-footer
     width: 100%
@@ -46,9 +57,39 @@
       height: 57px
       align-items: center
       padding: 0 154px 0 10px
+      @media (max-width: 992px)
+        padding-right: 0
+      @media (max-width: 567px)
+        flex-direction: column
+        align-items: center
+        padding-top: 8px
+        padding-bottom: 8px
+        text-align: center
     &__time
       display: block
       color: $color-white
+      @media (max-width: 420px)
+        max-width: 160px
     &__www
       display: block
       color: $color-white
+.mobail-footer__menu
+  @media (min-width: 769px)
+    display: none
+  & .submenu-category__list
+    display: block
+    margin: auto
+    margin-bottom: 30px
+    max-width: 150px
+    transition: 0.5s
+    @media (max-width: 420px)
+      position: absolute
+      padding-left: 10px
+      border-left: 1px solid $color-white
+      top: 37px
+      right: 0
+.footer
+  & .footer-submenu-category__title
+    display: none
+    @media (max-width: 768px)
+      display: block
