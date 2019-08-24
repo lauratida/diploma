@@ -30,6 +30,7 @@ $(document).ready(function () {
   $('.slick-dots').children().addClass('slick-dots__item');
   $(".slick-dots").wrap("<div class='container container-slider'></div>");
 
+  // Подключаем слайдер секции Акции
   $('.stock-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -37,14 +38,32 @@ $(document).ready(function () {
     dots: true,
     fade: true,
     dotsClass: 'stock-slider-dot',
-    customPaging: function(slick, index) {
-      var image = $(slick.$slides[index]).find('.slider__img').attr('srcprev');
-      return '<img src="' + image + '" alt="" /> '
-    },
+    // customPaging: function(slick, index) {
+    //   var image = $(slick.$slides[index]).find('.slider__img').attr('srcprev');
+    //   return '<img src="' + image + '" alt="" /> '
+    // },
     appendDots: $('.stock-slider__dots'),
     customPaging : function(slider, i) {
         var thumb = $(slider.$slides[i]).data();
         return '<a>'+(i+1).toString().padStart(2, '0')+'</a>';
     },
+  });
+
+  // Подключаем слайдер секции Покупатели
+  $('.mention__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    fade: true,
+    dotsClass: 'mention-slider-dot',
+    appendDots: $('.mention__slider-dots'),
+    customPaging: function(slick, index) {
+      var image = $(slick.$slides[index]).find('.mention-card__text').attr('dotimg');
+      var name = $(slick.$slides[index]).find('.mention-card__text').attr('dotname');
+      var addres = $(slick.$slides[index]).find('.mention-card__text').attr('dotaddres');
+
+      return '<img src="' + image + '" alt=""><span class="block"><span class="bold block">' + name + '</span>' + addres + '</span>'
+    }
   });
 });

@@ -1,0 +1,115 @@
+.mention
+  background-image: url(../img/mention/bg.jpg)
+  background-size: cover
+  text-align: center
+  padding-top: 82px
+  padding-bottom: 72px
+  @media (max-width: 420px)
+    padding: 50px 0
+  &__title
+    margin-bottom: 5px
+    margin-left: 17px
+  &__subtitle
+    margin-bottom: 61px
+    margin-left: 19px
+    &:after
+      left: 48.1%
+  &__wrap
+    display: flex
+    position: relative
+    padding-left: 17px
+    @media (max-width: 567px)
+      flex-direction: column
+  &__slider
+    max-width: 882px
+    min-height: 482px
+    @media (max-width: 1215px)
+      max-width: 600px
+    @media (max-width: 768px)
+      max-width: 410px
+    @media (max-width: 420px)
+      min-height: 352px
+      max-height: 352px
+  &-card
+    padding: 102px 139px 0 133px
+    background-color: $color-white
+    position: relative
+    text-align: left
+    min-height: 482px
+    @media (max-width: 1215px)
+      padding: 42px 109px 0 103px
+    @media (max-width: 768px)
+      padding: 10px 20px 0 20px
+    @media (max-width: 420px)
+      min-height: 352px
+    &:last-child
+      p
+        margin-bottom: 10px
+    &__quote
+      position: absolute
+      top: 54px
+      left: 53px
+      z-index: 10000
+      @media (max-width: 768px)
+        display: none
+    &__text
+      padding: 0
+      font-size: 15px
+      line-height: 25px
+      margin-bottom: 46px
+      @media (max-width: 420px)
+        font-size: 12px
+        line-height: 14px
+        margin-bottom: 16px
+  &__textarea
+    width: 590px
+    height: 160px
+    margin-bottom: 20px
+    @media (max-width: 1215px)
+      width: 400px
+      @media (max-width: 768px)
+        width: 353px
+      @media (max-width: 420px)
+        width: 218px
+  &-slider-dot
+    list-style: none
+    padding: 0
+    margin: 0
+    @media (max-width: 567px)
+      display: flex
+    & li
+      display: flex
+      align-items: center
+      height: 104px
+      padding-left: 27px
+      width: 317px
+      margin-bottom: 22px
+      // margin-left: -50px
+      @media (max-width: 992px)
+        width: 126px
+      @media (max-width: 567px)
+        padding-left: 5px
+        padding-right: 5px
+      & span
+        display: none
+        margin-left: 19px
+        margin-top: 1px
+        font-size: 15px
+        line-height: 25px
+      &.slick-active
+        background-color: $color-white
+        // border-radius: 52px
+        border-top-right-radius: 52px
+        border-bottom-right-radius: 52px
+        @media (max-width: 567px)
+          border-radius: 52px
+          border-top-right-radius: 0px
+          border-top-left-radius: 0
+        & span
+          display: block
+          @media (max-width: 992px)
+            display: none
+.mention__slider .mention-card
+  min-height: 482px
+  @media (max-width: 420px)
+      min-height: 352px

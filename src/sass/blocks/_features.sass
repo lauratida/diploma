@@ -1,0 +1,97 @@
+.features
+  background-color: $section_bg
+  text-align: center
+  padding-bottom: 103px
+  &__title
+    margin-bottom: 5px
+    margin-left: 17px
+  &__subtitle
+    margin-bottom: 58px
+    margin-left: 18px
+    &:after
+      left: 48.1%
+  &__cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    padding-left: 16px
+    padding-right: 1px
+    text-align: left
+  &-card
+    flex-basis: 25%
+    height: 251px
+    vertical-align: center
+    display: flex
+    flex-direction: column
+    // justify-content: center
+    align-items: flex-start
+    @media (max-width: 1215px)
+      flex-basis: 50%
+    @media (max-width: 768px)
+      order: 0
+      flex-basis: 100%
+    &:nth-child(1)
+      @media (max-width: 1215px)
+        order: 0
+      @media (max-width: 768px)
+        order: 0
+    &:nth-child(2)
+      @media (max-width: 1215px)
+        order: 1
+      @media (max-width: 768px)
+        order: 0
+    &:nth-child(3)
+      @media (max-width: 1215px)
+        order: 3
+      @media (max-width: 768px)
+        order: 0
+    &:nth-child(4)
+      @media (max-width: 1215px)
+        order: 2
+      @media (max-width: 768px)
+        order: 0
+    &:nth-child(5)
+      order: 1
+      @media (max-width: 1215px)
+        order: 4
+      @media (max-width: 768px)
+        order: 0
+    &:nth-child(6)
+      order: 0
+      @media (max-width: 1215px)
+        order: 5
+      @media (max-width: 768px)
+        order: 0
+    &:nth-child(7)
+      order: 3
+      @media (max-width: 1215px)
+        order: 7
+      @media (max-width: 768px)
+        order: 0
+    &:nth-child(8)
+      order: 2
+      @media (max-width: 1215px)
+        order: 6
+      @media (max-width: 768px)
+        order: 0
+    &__title
+      color: $color-button
+      line-height: 30px
+      margin: 0
+      margin-bottom: 3px
+      text-transform: uppercase
+      letter-spacing: -0.7px
+    &__image
+      background-color: $color-features_bg
+      align-items: center
+      justify-content: center
+    &__desc
+      background-color: $color-white
+      padding: 79px 23px 0 37px
+      @media (max-width: 420px)
+        padding-top: 59px
+    &__text
+      font-size: 13px
+      line-height: 22px
+      margin: 0
+      letter-spacing: 0.47px

@@ -67,10 +67,6 @@ a
   &:focus
     border: 1px solid $color-button
     outline: none
-.section
-  &-title
-  &-subtitle
-
 .test
   height: 50px
   background-color: grey
@@ -80,7 +76,9 @@ a
 //   justify-content: space-between
 
 .section
-  padding: 89px 0 96px 0
+  padding: 87px 0 96px 0
+  @media (max-width: 420px)
+    padding: 50px 0 30px 0
   &__title
     +bold
     font-size: 32px
@@ -92,6 +90,16 @@ a
     line-height: 30px
     margin: 0
     +reg
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: 47px
+      height: 1px
+      background-color: $color-text_main
+      bottom: -19px
+      left: 33.2%
 .center-items
   display: flex
   align-items: center
