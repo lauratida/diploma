@@ -1,0 +1,90 @@
+.news
+  text-align: center
+  padding: 86px 0 47px 16px
+  &_color
+    background-color: $section_bg
+  &__button
+    margin: auto
+    margin-top: 57px
+    width: 198px
+    height: 50px
+    @media (max-width: 420px)
+      margin-top: 10px
+  &__title
+    margin-bottom: 4px
+    margin-left: 1px
+  &__subtitle
+    margin-left: 3px
+    margin-bottom: 61px
+    &:after
+      left: 48%
+  &-cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-right: -1px
+    @media (max-width: 1215px)
+      justify-content: center
+  &-card
+    position: relative
+    text-align: left
+    min-height: 464px
+    @media (max-width: 1215px)
+      margin-bottom: 30px
+      &:nth-child(2)
+        margin-left: 30px
+        @media (max-width: 768px)
+          margin-left: 0
+    @media (max-width: 992px)
+      max-width: 351px
+    @media (max-width: 768px)
+      max-width: 381px
+    @media (max-width: 420px)
+      margin-bottom: 0
+      min-height: 370px
+    &:hover
+      background-color: rgba(255, 255, 255, 1)
+      @media (max-width: 992px)
+        background-color: rgba(255, 255, 255, 0)
+    &__date
+      position: absolute
+      top: 28px
+      left: 27px
+      width: 70px
+      height: 60px
+      background-color: $color-main_brown
+      line-height: 20px
+      color: $color-white
+      padding-top: 11px
+      text-align: center
+      @media (max-width: 420px)
+        top: 3px
+        left: 3px
+      &-number
+        font-size: 18px
+    &__title
+      color: $color-darkgreen
+      text-transform: uppercase
+      margin-top: 30px
+      margin-bottom: 11px
+      margin-left: 26px
+      letter-spacing: -0.6px
+      @media (max-width: 420px)
+        font-size: 12px
+        margin-left: 3px
+    &__desc
+      max-width: 304px
+      margin: 0
+      margin-left: 26px
+      font-size: 13px
+      line-height: 22px
+      margin-bottom: 31px
+      letter-spacing: 0.6px
+      @media (max-width: 420px)
+        font-size: 11px
+        margin-left: 3px
+    & .detail__link
+      margin-left: 26px
+      & img
+        margin-left: 39px
+      
