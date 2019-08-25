@@ -28,58 +28,74 @@
   <!-- Меню в футере -->
   <footer class="footer">
     <div class="container">
+      <div class="relative">
       <ul class="submenu">
         <li class="submenu-category">
+          <a href="#" class="submenu-category__title footer-submenu-category__title">Кухня</a>
           <a href="#" class="submenu-category__title">Кухня</a>
-          <ul class="submenu-category__list">
+          <ul class="submenu-category__list footer-submenu-category__list">
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Обеденные столы</a></li>
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кухонные уголки</a></li>
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Стулья</a></li>
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Табуреты</a></li>
-            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комплектующие</a></li>
+            <!-- <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комплектующие</a></li> -->
           </ul>
         </li>
         <li class="submenu-category">
+          <a href="#" class="submenu-category__title footer-submenu-category__title">Гостиная</a>
           <a href="#" class="submenu-category__title">Гостиная</a>
           <ul class="submenu-category__list">
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы</a></li>
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">ТВ-тумбы</a></li>
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Журнальные столы</a></li>
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Мягкая мебель</a></li>
-            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Стеллажи</a></li>
+            <!-- <li class="submenu-category__item"><a href="#" class="submenu-category__link">Стеллажи</a></li> -->
           </ul>
         </li>
         <li class="submenu-category">
+          <a href="#" class="submenu-category__title footer-submenu-category__title">Спальня</a>
           <a href="#" class="submenu-category__title">Спальня</a>
           <ul class="submenu-category__list">
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комоды</a></li>
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Тумбы прикроватные</a></li>
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Туалетные столики</a></li>
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кровати</a></li>
-            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Матрасы</a></li>
+            <!-- <li class="submenu-category__item"><a href="#" class="submenu-category__link">Матрасы</a></li> -->
           </ul>
         </li>
         <li class="submenu-category">
+          <a href="#" class="submenu-category__title footer-submenu-category__title">Детская</a>
           <a href="#" class="submenu-category__title">Детская</a>
           <ul class="submenu-category__list">
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Письменные столы</a></li>
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Компьютерные столы</a></li>
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кровати детские</a></li>
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы детские</a></li>
-            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комоды и тумбы</a></li>
+            <!-- <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комоды и тумбы</a></li> -->
           </ul>
         </li>
         <li class="submenu-category">
+          <a href="#" class="submenu-category__title footer-submenu-category__title">Прихожая</a>
           <a href="#" class="submenu-category__title">Прихожая</a>
           <ul class="submenu-category__list">
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Обувницы</a></li>
             
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Шкафы</a></li>
             <li class="submenu-category__item"><a href="#" class="submenu-category__link">Зеркала</a></li>
-            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Вешалки</a></li>
+            <!-- <li class="submenu-category__item"><a href="#" class="submenu-category__link">Вешалки</a></li> -->
           </ul>
         </li>
       </ul>
+      <div class="mobail-footer__menu">
+        <ul class="submenu-category__list footer-submenu-category__list">
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Обеденные столы</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Кухонные уголки</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Стулья</a></li>
+            <li class="submenu-category__item"><a href="#" class="submenu-category__link">Табуреты</a></li>
+            <!-- <li class="submenu-category__item"><a href="#" class="submenu-category__link">Комплектующие</a></li> -->
+          </ul>
+      </div>
+      </div>
     </div>
     <div class="footer-information">
       <div class="container">
@@ -90,18 +106,19 @@
       </div>
     </div>
   </footer>
+  
   <!-- Модальное окно -->
   <div class="modal" id="modal1">
     <div class="modal-invite">
       <button class="modal__close" id="closeinvite">&times;</button>
       <div class="forminvite__wrap">
         <div class="forminvite__img"><img id="formimg" src="img/invite/invite.jpg" alt=""></div>
-        <form action="" method="POST" class="form forminvite__form">
+        <form action="#" method="POST" class="form forminvite__form">
           <h2 class="section__title forminvite__title" id="forminvite__title">Пригласить замерщика</h2>
           <h3 class="section__subtitle forminvite__subtitle" id="forminvite__subtitle">Отправьте заявку на замер и мы вместе расчитаем точную стоимость вашей новой мебели или кухни</h3>
           <input type="text" placeholder="Как Вас зовут?" name="username" id="usernamei" class="forminvite__input input">
           <input type="tel" placeholder="Ваш номер телефона" name="userphone" id="userphonei" class="forminvite__input input">
-          <input type="submit" value="Пригласить" name="formname" class="forminvite__submit" id="forminvite__submit">
+          <input type="submit" value="Пригласить" name="formname" class="button forminvite__submit" id="forminvite__submit">
         </form>
       </div>
     </div>
@@ -115,6 +132,5 @@
   <script src="js/form.js"></script>
   <script src="js/modal.js"></script>
  
-
 </body>
 </html>

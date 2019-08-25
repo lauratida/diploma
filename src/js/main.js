@@ -88,13 +88,26 @@ $(document).ready(function () {
     $input.change();
     return false;
   });
-
+  // Меню в футере при адаптиве
   $('.footer-submenu-category__title').on('click', function(e) {
     e.preventDefault;
     $('.mobail-footer__menu').html('');
     $(this).siblings('.submenu-category__list').clone().appendTo('.mobail-footer__menu');
     return false;
   }); 
+  // Слайдер в карточке товаров
+  $('.product-about-bigslide').slick({
+    arrows: true,
+    dots: true,
+    dotsClass: 'product-about-prevslide__item',
+    prevArrow: $('.product-about-bigslide__arrowsl'),
+    nextArrow: $('.product-about-bigslide__arrowsr'),
+    customPaging: function(slick, index) {
+      var image = $(slick.$slides[index]).find('.product-about-bigslide__img').attr('data-srcprev');
+      return '<img src="' + image + '" alt="" /> '
+    }
+  });
+
 });
 
 

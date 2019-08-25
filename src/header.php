@@ -15,16 +15,17 @@
 
 </head>
 <body>
-<!-- Окно благодарности -->
-<div class="modal" id="modal-succes">
+  <!-- Окно благодарности -->
+  <div class="modal" id="modal-succes">
     <div class="modal-success">
       <button class="modal__close" id="closesuccessmodal">&times;</button>
       <span class="block treatment">Спасибо, <span id="sucess-user">12345посетитель</span>!</span>
       <span>Наш менеджер перезвонит Вам&nbsp;в&nbsp;течении 60&nbsp;секунд </span>
     </div>
   </div>
+  <!-- Модальное окно -->
 
-<header class="header">
+  <header class="header">
     <!-- Logobar из шапки сайта -->
     <div class="wrap-line">
         <div class="container">
@@ -63,7 +64,7 @@
       <nav class="menu">
         <a href="#" class="toggle-button"><span class="toggle-button__icon"></span></a>
         <ul class="menu__links">
-          <li class="menu__item"><a href="katalog.php">Каталог </a>
+          <li class="menu__item"><a href="catalog.php" target="_blank">Каталог </a>
             <button class="button-addsubmenu button-addsubmenu_one">&gt;</button>
             <ul class="submenu submenu_one">
               <li class="submenu-category">

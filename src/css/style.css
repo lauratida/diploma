@@ -465,6 +465,12 @@ a:hover {
   }
 }
 
+@media (max-width: 567px) {
+  .menu {
+    padding-left: 0;
+  }
+}
+
 .menu__links {
   list-style: none;
   margin: 0;
@@ -1366,6 +1372,12 @@ a:hover {
 @media (max-width: 1205px) {
   .forminvite__subtitle:after {
     bottom: -22px;
+  }
+}
+
+@media (max-width: 1205px) {
+  .forminvite__subtitle:after {
+    left: 105px;
   }
 }
 
@@ -2417,6 +2429,12 @@ a:hover {
   left: 48%;
 }
 
+@media (max-width: 420px) {
+  .news__subtitle:after {
+    left: 41%;
+  }
+}
+
 .news-cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2569,6 +2587,12 @@ a:hover {
   margin-bottom: 27px;
 }
 
+@media (max-width: 768px) {
+  .catalog__title {
+    text-align: center;
+  }
+}
+
 .catalog .catalog-navigation {
   list-style: none;
   display: -webkit-box;
@@ -2623,6 +2647,26 @@ a:hover {
   .catalog-menu {
     -ms-flex-preferred-size: 190px;
         flex-basis: 190px;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog-menu {
+    margin: 0;
+    width: 540px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 567px) {
+  .catalog-menu {
+    width: 410px;
+  }
+}
+
+@media (max-width: 420px) {
+  .catalog-menu {
+    width: 277px;
   }
 }
 
@@ -2695,6 +2739,9 @@ a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -2738,7 +2785,19 @@ a:hover {
 
 @media (max-width: 768px) {
   .minicard {
-    width: 306px;
+    width: 256px;
+  }
+}
+
+@media (max-width: 567px) {
+  .minicard {
+    width: 200px;
+  }
+}
+
+@media (max-width: 420px) {
+  .minicard {
+    width: 277px;
   }
 }
 
@@ -2763,7 +2822,19 @@ a:hover {
 
 @media (max-width: 768px) {
   .minicard-wrap-position {
-    width: 306px;
+    width: 256px;
+  }
+}
+
+@media (max-width: 567px) {
+  .minicard-wrap-position {
+    width: 200px;
+  }
+}
+
+@media (max-width: 420px) {
+  .minicard-wrap-position {
+    width: 277px;
   }
 }
 
@@ -2772,6 +2843,8 @@ a:hover {
           box-shadow: 0 1px 51px 11px rgba(127, 128, 139, 0.22);
   height: 550px;
   z-index: 100;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (max-width: 992px) {
@@ -2863,6 +2936,12 @@ a:hover {
   }
 }
 
+@media (max-width: 420px) {
+  .input_number {
+    width: 59px;
+  }
+}
+
 .plus, .minus {
   display: block;
   width: 35px;
@@ -2877,6 +2956,18 @@ a:hover {
 @media (max-width: 1215px) {
   .plus, .minus {
     width: 28px;
+  }
+}
+
+@media (max-width: 567px) {
+  .plus, .minus {
+    width: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .plus, .minus {
+    width: 35px;
   }
 }
 
@@ -2905,7 +2996,19 @@ a:hover {
 
 @media (max-width: 768px) {
   .button_catalog {
-    width: 255px;
+    width: 205px;
+  }
+}
+
+@media (max-width: 567px) {
+  .button_catalog {
+    width: 150px;
+  }
+}
+
+@media (max-width: 420px) {
+  .button_catalog {
+    width: 225px;
   }
 }
 
@@ -2936,6 +3039,12 @@ input[type="radio"] {
   margin-right: 6px;
 }
 
+@media (max-width: 420px) {
+  .sort-label {
+    margin-bottom: 10px;
+  }
+}
+
 .sort {
   height: 55px;
   background-color: #ffffff;
@@ -2943,12 +3052,164 @@ input[type="radio"] {
   margin-bottom: 40px;
 }
 
+@media (max-width: 567px) {
+  .sort {
+    height: 75px;
+  }
+}
+
+@media (max-width: 420px) {
+  .sort {
+    height: 115px;
+  }
+}
+
 .sort_text {
   margin-right: 11px;
 }
 
+@media (max-width: 567px) {
+  .sort_text {
+    display: block;
+  }
+}
+
 input[type="radio"]:checked + label {
   background-color: #7dad4b;
+}
+
+.product-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-about-bigslide {
+  max-width: 468px;
+  margin-right: 34px;
+}
+
+.product-about-bigslide__item {
+  position: relative;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1px 51px 11px rgba(127, 128, 139, 0.06);
+          box-shadow: 0 1px 51px 11px rgba(127, 128, 139, 0.06);
+  margin-bottom: 12px;
+}
+
+.product-about-bigslide__arrowsl {
+  position: absolute;
+  top: 208px;
+  left: 22px;
+}
+
+.product-about-bigslide__arrowsr {
+  position: absolute;
+  top: 208px;
+  right: 22px;
+}
+
+.product-about-bigslide__img {
+  width: 468px;
+  height: 428px;
+  position: relative;
+}
+
+.product-about-bigslide__img img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.product-about-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product-about-main__text {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 41px;
+}
+
+.product-about-main__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  line-height: 38px;
+  margin-bottom: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.product-about-main__price .minicard__price {
+  margin: 0;
+}
+
+.product-about-main__count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 41px;
+}
+
+.product-about-main__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product-about-prevslide__item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 471px;
+}
+
+.count-right {
+  margin-right: auto;
+}
+
+.rating {
+  position: absolute;
+  top: 34px;
+  right: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 input.invalid {
