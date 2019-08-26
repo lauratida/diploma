@@ -31,3 +31,197 @@
 // @media (max-width: 768px)
 // @media (max-width: c)
 // @media (max-width: 420px)
+
+
+
+$('#inviteindex').validate({
+    rules: {
+      username: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      userphone: {
+        required: true,
+      }
+    },
+    messages: {
+      username: {
+        required: "Заполните Имя",
+        minlength: "Введите больше 2 символов",
+        maxlength: "Введите меньше 15 символов",
+      },
+      userphone: {
+        required: "Заполните номер телефона",
+      }
+    },
+    errorClass: "invalid",
+    errorElement: "div",
+    submitHandler: function (form) {
+      event.preventDefault();
+      $.ajax({
+        url: './mail.php',
+        type: 'post',
+        data: $(form).serialize(),
+        success: function (data) {
+          yaCounter55062736.reachGoal('FormInviteIndex');
+          // Очистка полей формы
+          $('#username').val('');
+          $('#userphone').val('');
+
+          $('#usernamei').val('');
+          $('#userphonei').val('');
+
+          $('#usernamec').val('');
+          $('#userphonec').val('');
+
+          // Вывод ответа в модальном окне
+          $('#sucess-user').html(data);
+          $('#sucess-user').addClass('bold');
+          $('#modal-succes').addClass('modal_active');
+          // Автозакрытие
+          var timerId;
+          timerId = setTimeout(function () {
+            $('#modal-succes').removeClass('modal_active');
+          }, 5000);
+          // Закрытие на кнопку-крестик
+          $('#closesuccessmodal').on('click', function () {
+            clearTimeout(timerId);
+            $('#modal-succes').removeClass('modal_active');
+          });
+
+        },
+        error: function (jqXHR, textStatus) {
+          console.log(jqXHR + ': ' + textStatus);
+        },
+      });
+    }
+  });
+  $('#forminvite__submit').on('click', function(){
+  $('#recallmodal').validate({
+    rules: {
+      username: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      userphone: {
+        required: true,
+      }
+    },
+    messages: {
+      username: {
+        required: "Заполните Имя",
+        minlength: "Введите больше 2 символов",
+        maxlength: "Введите меньше 15 символов",
+      },
+      userphone: {
+        required: "Заполните номер телефона",
+      }
+    },
+    errorClass: "invalid",
+    errorElement: "div",
+    submitHandler: function (form) {
+      event.preventDefault();
+      $.ajax({
+        url: './mail.php',
+        type: 'post',
+        data: $(form).serialize(),
+        success: function (data) {
+          yaCounter55062736.reachGoal('FormRecallModal');
+          // Очистка полей формы
+          $('#username').val('');
+          $('#userphone').val('');
+
+          $('#usernamei').val('');
+          $('#userphonei').val('');
+
+          $('#usernamec').val('');
+          $('#userphonec').val('');
+
+          // Вывод ответа в модальном окне
+          $('#sucess-user').html(data);
+          $('#sucess-user').addClass('bold');
+          $('#modal-succes').addClass('modal_active');
+          // Автозакрытие
+          var timerId;
+          timerId = setTimeout(function () {
+            $('#modal-succes').removeClass('modal_active');
+          }, 5000);
+          // Закрытие на кнопку-крестик
+          $('#closesuccessmodal').on('click', function () {
+            clearTimeout(timerId);
+            $('#modal-succes').removeClass('modal_active');
+          });
+
+        },
+        error: function (jqXHR, textStatus) {
+          console.log(jqXHR + ': ' + textStatus);
+        },
+      });
+    }
+  });});
+
+  $('#invitemodal').validate({
+    rules: {
+      username: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      userphone: {
+        required: true,
+      }
+    },
+    messages: {
+      username: {
+        required: "Заполните Имя",
+        minlength: "Введите больше 2 символов",
+        maxlength: "Введите меньше 15 символов",
+      },
+      userphone: {
+        required: "Заполните номер телефона",
+      }
+    },
+    errorClass: "invalid",
+    errorElement: "div",
+    submitHandler: function (form) {
+      event.preventDefault();
+      $.ajax({
+        url: './mail.php',
+        type: 'post',
+        data: $(form).serialize(),
+        success: function (data) {
+          yaCounter55062736.reachGoal('FormInviteModal');
+          // Очистка полей формы
+          $('#username').val('');
+          $('#userphone').val('');
+
+          $('#usernamei').val('');
+          $('#userphonei').val('');
+
+          $('#usernamec').val('');
+          $('#userphonec').val('');
+
+          // Вывод ответа в модальном окне
+          $('#sucess-user').html(data);
+          $('#sucess-user').addClass('bold');
+          $('#modal-succes').addClass('modal_active');
+          // Автозакрытие
+          var timerId;
+          timerId = setTimeout(function () {
+            $('#modal-succes').removeClass('modal_active');
+          }, 5000);
+          // Закрытие на кнопку-крестик
+          $('#closesuccessmodal').on('click', function () {
+            clearTimeout(timerId);
+            $('#modal-succes').removeClass('modal_active');
+          });
+
+        },
+        error: function (jqXHR, textStatus) {
+          console.log(jqXHR + ': ' + textStatus);
+        },
+      });
+    }
+  });

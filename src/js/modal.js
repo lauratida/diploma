@@ -68,10 +68,12 @@ $(document).ready(function(){
     // var target = $(this).attr('data-target');
     // $('.dialog-desc').addClass('modal_active');
     // $('.dialog-desc').load(target+".html");
+
+    // Настраиваем счетчик и переделываем все...
     $('.forminvite__form').attr('id', 'recallmodal');
     $('#forminvite__title').html('Обратный <br> звонок');
     $('#forminvite__subtitle').html('Отправьте заявку на обратный звонок и мы ответим на ваши вопросы по вашей новой мебели или кухни');
-    $('#forminvite__submit').val('Обратный звонок');
+    $('#forminvitemodal__submit').val('Обратный звонок');
     $('#formimg').attr('src','img/invite/recall.jpg');
   });
   invite.on('click', function(event){
@@ -80,10 +82,13 @@ $(document).ready(function(){
     // var target = $(this).attr('data-target');
     // $('.dialog-desc').addClass('modal_active');
     // $('.dialog-desc').load(target+".html");
+
+
+    
     $('.forminvite__form').attr('id', 'invitemodal');
     $('#forminvite__title').html('Пригласить замерщика');
     $('#forminvite__subtitle').html('Отправьте заявку на замер и мы вместе расчитаем точную стоимость вашей новой мебели или кухни');
-    $('#forminvite__submit').val('Вызывать замерщика');
+    $('#forminvitemodal__submit').val('Вызывать замерщика');
     $('#formimg').attr('src','img/invite/invite.jpg');
   });
   // Подгрузка новых карточек по клику на показать еще

@@ -228,7 +228,7 @@ include 'header.php';
                 </div>
               </div>
           </div> <!-- catalog-products -->
-          <a href="#" id="viewmore" class="button button_a">Показать еще</a>
+          <a href="#" id="viewmore" class="button button_a button_viewmore">Показать еще</a>
         </div>
 
 

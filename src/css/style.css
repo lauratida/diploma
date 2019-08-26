@@ -2959,6 +2959,12 @@ input[type='number'] {
   margin-right: 5px;
 }
 
+@media (min-width: 993px) {
+  .plus, .minus {
+    cursor: pointer;
+  }
+}
+
 @media (max-width: 1215px) {
   .plus, .minus {
     width: 28px;
@@ -3036,6 +3042,7 @@ input[type='number'] {
   margin-top: 16px;
   color: #ffffff;
   margin-bottom: 86px;
+  padding-top: 11px;
 }
 
 input[type="radio"] {
@@ -3111,6 +3118,7 @@ input[type="radio"]:checked + label {
 .product-about-bigslide {
   max-width: 468px;
   margin-right: 34px;
+  outline: none;
 }
 
 @media (max-width: 1215px) {
@@ -3144,6 +3152,7 @@ input[type="radio"]:checked + label {
   -webkit-box-shadow: 0 1px 51px 11px rgba(127, 128, 139, 0.06);
           box-shadow: 0 1px 51px 11px rgba(127, 128, 139, 0.06);
   margin-bottom: 12px;
+  outline: none;
 }
 
 .product-about-bigslide__arrowsl {
@@ -3190,6 +3199,7 @@ input[type="radio"]:checked + label {
   width: 468px;
   height: 428px;
   position: relative;
+  outline: none;
 }
 
 @media (max-width: 1215px) {
@@ -3534,6 +3544,10 @@ input[type="radio"]:checked + label {
     width: 30px;
     padding-left: 10px;
   }
+}
+
+.catalog .button_product {
+  padding-top: 11px;
 }
 
 @media (max-width: 1215px) {
