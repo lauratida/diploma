@@ -74,10 +74,10 @@ $(document).ready(function () {
     }
   });
   // Плюс минус кнопки на карточке товаров
-  $('.minus').click(function () {
+  /* $('.minus').click(function () {
     var $input = $(this).parent().find('input');
     var count = parseInt($input.val()) - 1;
-    count = count < 1 ? 1 : count;
+    count = count < 0 ? 0 : count;
     $input.val(count);
     $input.change();
     return false;
@@ -87,7 +87,7 @@ $(document).ready(function () {
     $input.val(parseInt($input.val()) + 1);
     $input.change();
     return false;
-  });
+  }); */
   // Меню в футере при адаптиве
   $('.footer-submenu-category__title').on('click', function(e) {
     e.preventDefault;
@@ -106,6 +106,19 @@ $(document).ready(function () {
       var image = $(slick.$slides[index]).find('.product-about-bigslide__img').attr('data-srcprev');
       return '<img src="' + image + '" alt="" /> '
     }
+  });
+  // Слайдер описание и характеристики в карточке товаров
+  $('.product-detail__slider').slick({
+    arrows: false,
+    dots: true,
+    dotsClass: 'product-detail__dot',
+    customPaging: function(slick, index) {
+      var image = $(slick.$slides[index]).find('.product-detail__desc').attr('data-label');
+      return '<span>' + image + '<span>'
+    },
+    appendDots: $('.product-detail__dots'),
+    adaptiveHeight: true,
+    draggable: false,
   });
 
 });

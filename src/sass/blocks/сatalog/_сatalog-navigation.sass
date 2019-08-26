@@ -108,6 +108,7 @@
     width: 224px
   @media (max-width: 992px)
     width: 258px
+    height: 550px
   @media (max-width: 768px)
     width: 256px
   @media (max-width: 567px)
@@ -123,6 +124,7 @@
       width: 224px
     @media (max-width: 992px)
       width: 258px
+      height: 550px
     @media (max-width: 768px)
       width: 256px
     @media (max-width: 567px)
@@ -130,12 +132,13 @@
     @media (max-width: 420px)
       width: 277px
   &:hover
-    box-shadow: 0 1px 51px 11px rgba(127, 128, 139, 0.22)
-    height: 550px
-    z-index: 100
-    transition: 0.5s
-    @media (max-width: 992px)
-      box-shadow: 0 1px 51px 11px rgba(127, 128, 139, 0.06)
+    @media (min-width: 993px)
+      box-shadow: 0 1px 51px 11px rgba(127, 128, 139, 0.22)
+      height: 550px
+      z-index: 100
+      transition: 0.5s
+    // @media (max-width: 992px)
+    //   box-shadow: 0 1px 51px 11px rgba(127, 128, 139, 0.06)
   &__title
     margin: 29px 0 13px 23px
     font-size: 16px
@@ -185,6 +188,7 @@
   padding-left: 20px
   @media (max-width: 1215px)
     width: 34px
+    padding-left: 8px
   @media (max-width: 420px)
     width: 59px
 .plus, .minus
@@ -217,15 +221,18 @@
   margin-top: 10px
   @media (max-width: 1215px)
     width: 173px
-  @media (max-width: 768px)
+  @media (max-width: 992px)
     width: 205px
   @media (max-width: 567px)
     width: 150px
   @media (max-width: 420px)
     width: 225px
   &:hover
-    color: $color-white
-    background-color: $color-button_add
+    @media (min-width: 993px)
+      color: $color-white
+      background-color: $color-button_add
+    @media (max-width: 992px)
+      background-color: $color-white
 #viewmore
   margin: auto
   margin-top: 16px

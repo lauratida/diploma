@@ -80,10 +80,10 @@ include 'header.php';
                   <img src="img/сatalog/star_grey.png" alt="">
                   <strong class="minicard__price">89 руб. <span class="minicard__price-line">100 руб</span></strong>
                 </div>
-                <div class="minicard__row">
-                  <span class="minus bold">-</span>
-                  <input type="text" class="input input_number" value="1">
-                  <span class="plus bold">+</span>
+                <div class="minicard__row" data-trigger="spinner">
+                  <span class="minus bold" data-spin="down">-</span>
+                  <input type="text" class="input input_number" value="1" data-ruler="quantity" data-min="0">
+                  <span class="plus bold" data-spin="up">+</span>
                   <button class="button button_mini"><img src="img/сatalog/cart.png" alt=""></button>
                 </div>
                 <button class="button button_orange button_catalog">Купить в один клик</button>
@@ -103,10 +103,10 @@ include 'header.php';
                     <img src="img/сatalog/star_grey.png" alt="">
                     <strong class="minicard__price">89 руб. <span class="minicard__price-line">100 руб</span></strong>
                   </div>
-                  <div class="minicard__row">
-                    <span class="minus bold">-</span>
-                    <input type="text" class="input input_number" value="1">
-                    <span class="plus bold">+</span>
+                  <div class="minicard__row" data-trigger="spinner">
+                    <span class="minus bold" data-spin="down">-</span>
+                    <input type="text" class="input input_number" value="1" data-ruler="quantity" data-min="0">
+                    <span class="plus bold" data-spin="up">+</span>
                     <button class="button button_mini"><img src="img/сatalog/cart.png" alt=""></button>
                   </div>
                   <button class="button button_orange button_catalog">Купить в один клик</button>
@@ -126,10 +126,10 @@ include 'header.php';
                     <img src="img/сatalog/star_grey.png" alt="">
                     <strong class="minicard__price">89 руб. <span class="minicard__price-line">100 руб</span></strong>
                   </div>
-                  <div class="minicard__row">
-                    <span class="minus bold">-</span>
-                    <input type="text" class="input input_number" value="1">
-                    <span class="plus bold">+</span>
+                  <div class="minicard__row" data-trigger="spinner">
+                    <span class="minus bold" data-spin="down">-</span>
+                    <input type="text" class="input input_number" value="1" data-ruler="quantity" data-min="0">
+                    <span class="plus bold" data-spin="up">+</span>
                     <button class="button button_mini"><img src="img/сatalog/cart.png" alt=""></button>
                   </div>
                   <button class="button button_orange button_catalog">Купить в один клик</button>
@@ -149,10 +149,10 @@ include 'header.php';
                     <img src="img/сatalog/star_grey.png" alt="">
                     <strong class="minicard__price">89 руб. <span class="minicard__price-line">100 руб</span></strong>
                   </div>
-                  <div class="minicard__row">
-                    <span class="minus bold">-</span>
-                    <input type="text" class="input input_number" value="1">
-                    <span class="plus bold">+</span>
+                  <div class="minicard__row" data-trigger="spinner">
+                    <span class="minus bold" data-spin="down">-</span>
+                    <input type="text" class="input input_number" value="1" data-ruler="quantity" data-min="0">
+                    <span class="plus bold" data-spin="up">+</span>
                     <button class="button button_mini"><img src="img/сatalog/cart.png" alt=""></button>
                   </div>
                   <button class="button button_orange button_catalog">Купить в один клик</button>
@@ -172,10 +172,10 @@ include 'header.php';
                     <img src="img/сatalog/star_grey.png" alt="">
                     <strong class="minicard__price">89 руб. <span class="minicard__price-line">100 руб</span></strong>
                   </div>
-                  <div class="minicard__row">
-                    <span class="minus bold">-</span>
-                    <input type="text" class="input input_number" value="1">
-                    <span class="plus bold">+</span>
+                  <div class="minicard__row" data-trigger="spinner">
+                    <span class="minus bold" data-spin="down">-</span>
+                    <input type="text" class="input input_number" value="1" data-ruler="quantity" data-min="0">
+                    <span class="plus bold" data-spin="up">+</span>
                     <button class="button button_mini"><img src="img/сatalog/cart.png" alt=""></button>
                   </div>
                   <button class="button button_orange button_catalog">Купить в один клик</button>
@@ -195,10 +195,10 @@ include 'header.php';
                     <img src="img/сatalog/star_grey.png" alt="">
                     <strong class="minicard__price">89 руб. <span class="minicard__price-line">100 руб</span></strong>
                   </div>
-                  <div class="minicard__row">
-                    <span class="minus bold">-</span>
-                    <input type="text" class="input input_number" value="1">
-                    <span class="plus bold">+</span>
+                  <div class="minicard__row" data-trigger="spinner">
+                    <span class="minus bold" data-spin="down">-</span>
+                    <input type="text" class="input input_number" value="1" data-ruler="quantity" data-min="0">
+                    <span class="plus bold" data-spin="up">+</span>
                     <button class="button button_mini"><img src="img/сatalog/cart.png" alt=""></button>
                   </div>
                   <button class="button button_orange button_catalog">Купить в один клик</button>
@@ -218,10 +218,10 @@ include 'header.php';
                     <img src="img/сatalog/star_grey.png" alt="">
                     <strong class="minicard__price">89 руб. <span class="minicard__price-line">100 руб</span></strong>
                   </div>
-                  <div class="minicard__row">
-                    <span class="minus bold">-</span>
-                    <input type="text" class="input input_number" value="1">
-                    <span class="plus bold">+</span>
+                  <div class="minicard__row" data-trigger="spinner">
+                    <span class="minus bold" data-spin="down">-</span>
+                    <input type="text" class="input input_number" value="1" data-ruler="quantity" data-min="0">
+                    <span class="plus bold" data-spin="up">+</span>
                     <button class="button button_mini"><img src="img/сatalog/cart.png" alt=""></button>
                   </div>
                   <button class="button button_orange button_catalog">Купить в один клик</button>

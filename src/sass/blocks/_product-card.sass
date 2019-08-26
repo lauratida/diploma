@@ -2,9 +2,21 @@
 
 .product-about
   display: flex
+  margin-bottom: 57px
+  @media (max-width: 992px)
+    flex-direction: column
   &-bigslide
     max-width: 468px
     margin-right: 34px
+    @media (max-width: 1215px)
+      width: 343px
+    @media (max-width: 992px)
+      width: 468px
+      margin: auto
+    @media (max-width: 567px)
+      width: 410px
+    @media (max-width: 420px)
+      width: 277px
     &__item
       position: relative
       background-color: $color-white
@@ -14,14 +26,37 @@
       position: absolute
       top: 208px
       left: 22px
+      z-index: 1
+      @media (max-width: 1215px)
+        left: 4px
+      @media (max-width: 420px)
+        top: 298px
+        left: 94px
     &__arrowsr
       position: absolute
       top: 208px
       right: 22px
+      z-index: 1
+      @media (max-width: 1215px)
+        right: 4px
+      @media (max-width: 420px)
+        top: 298px
+        right: 94px
     &__img
       width: 468px
       height: 428px
       position: relative
+      @media (max-width: 1215px)
+        width: 343px
+        height: 272px
+      @media (max-width: 992px)
+        width: 468px
+        height: 428px
+      @media (max-width: 567px)
+        width: 410px
+        height: 338px
+      @media (max-width: 420px)
+        width: 277px
       & img
         position: absolute
         margin: auto
@@ -32,6 +67,14 @@
   &-main
     display: flex
     flex-direction: column
+    @media (max-width: 1215px)
+      width: 336px
+    @media (max-width: 992px)
+      width: 532px
+    @media (max-width: 567px)
+      width: 410px
+    @media (max-width: 420px)
+      width: 277px
     &__text
       padding: 0
       margin: 0
@@ -39,6 +82,11 @@
       line-height: 25px
       color: $color-black
       margin-bottom: 41px
+      @media (max-width: 992px)
+        margin-top: 40px
+      @media (max-width: 420px)
+        font-size: 14px
+        line-height: 17px
     &__price
       display: flex
       justify-content: space-between
@@ -64,7 +112,14 @@
     margin: 0
     display: flex
     justify-content: space-between
-    width: 471px
+    @media (max-width: 1215px)
+      width: 343px
+    @media (max-width: 992px)
+      width: 468px
+    @media (max-width: 567px)
+      width: 410px
+    @media (max-width: 420px)
+      width: 277px
 .count-right
   margin-right: auto
 .rating
@@ -72,3 +127,98 @@
   top: 34px
   right: 27px
   display: flex
+.product-detail
+  &__dot
+    list-style: none
+    display: flex
+    margin: 0
+    padding: 0
+    text-align: center
+    & li
+      width: 172px
+      height: 52px
+      display: inline-block
+      vertical-align: middle
+      padding: 17px 0 0 0
+      +bold
+      @media (max-width: 420px)
+        width: 137px
+      &:hover
+        @media (min-width: 993px)
+          cursor: pointer
+      &.slick-active
+        background-color: $color-white
+        color: $color-button
+
+  &__slider
+    width: 892px
+    @media (max-width: 1215px)
+      width: 712px
+    @media (max-width: 992px)
+      width: 532px
+    @media (max-width: 567px)
+      width: 410px
+    @media (max-width: 420px)
+      width: 277px
+  &__item
+    box-shadow: 0 1px 51px 11px rgba(127, 128, 139, 0.06)
+    background-color: $color-white
+    & p
+      width: 892px
+      // height: 400px
+      padding: 0
+      margin: 0
+      font-size: 16px
+      line-height: 25px
+      color: $color-black
+      padding: 31px 45px 31px 50px
+      @media (max-width: 1215px)
+        width: 712px
+      @media (max-width: 992px)
+        width: 532px
+      @media (max-width: 567px)
+        width: 410px
+      @media (max-width: 420px)
+        width: 277px
+        padding: 15px 15px 21px 15px
+        font-size: 14px
+        line-height: 17px
+
+.similar
+  padding: 0 0 62px 0
+  &__title
+    font-size: 21px
+    text-transform: uppercase
+    letter-spacing: 0.42px
+    +bold
+    margin-top: 49px
+    margin-bottom: 24px
+
+.catalog
+  & .plus
+    @media (max-width: 992px)
+      width: 35px
+    @media (max-width: 567px)
+      width: 20px
+  & .minus
+    @media (max-width: 992px)
+      width: 35px
+    @media (max-width: 567px)
+      width: 20px
+  & .input_number
+    @media (max-width: 992px)
+      width: 59px
+      padding-left: 20px
+    @media (max-width: 567px)
+      width: 30px
+      padding-left: 10px
+  & .button_product
+    @media (max-width: 1215px)
+      width: 161px
+    @media (max-width: 992px)
+      width: 233px
+    @media (max-width: 567px)
+      width: 161px
+    @media (max-width: 420px)
+      width: 135px
+      
