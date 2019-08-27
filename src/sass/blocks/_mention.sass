@@ -20,6 +20,7 @@
     display: flex
     position: relative
     padding-left: 17px
+    width: 100%
     @media (max-width: 567px)
       flex-direction: column
   &__slider
@@ -38,6 +39,7 @@
     position: relative
     text-align: left
     min-height: 482px
+    max-width: 882px
     @media (max-width: 1215px)
       padding: 42px 109px 0 103px
     @media (max-width: 768px)
@@ -59,6 +61,8 @@
       font-size: 15px
       line-height: 25px
       margin-bottom: 46px
+      width: 100%
+      max-width: 610px
       @media (max-width: 420px)
         font-size: 12px
         line-height: 14px
@@ -125,3 +129,8 @@
   min-height: 482px
   @media (max-width: 420px)
       min-height: 352px
+
+
+// ЧИним ие
+.mention__slider .slick-list
+  max-width: 882px

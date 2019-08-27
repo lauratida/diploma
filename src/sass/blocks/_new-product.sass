@@ -22,6 +22,8 @@
     //   bottom: -19px
     //   left: 33.2%
   &__wrap
+    width: 100% // попытка починить ие
+    // overflow: hidden
     display: flex
     justify-content: space-between
     flex-wrap: wrap
@@ -31,6 +33,7 @@
   &__card
     position: relative
     height: 364px
+    width: 593px // попытка починить ие
     margin-bottom: 19px
     @media (max-width: 1215px)
       width: 475px
@@ -63,6 +66,7 @@
     bottom: 31px
     left: 25px
     padding-top: 17px
+    color: $color-white
     @media (max-width: 1215px)
       bottom: 23px
     @media (max-width: 992px)

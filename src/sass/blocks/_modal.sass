@@ -7,6 +7,7 @@
   background-color: rgba(#000, 0.5)
   display: none
   z-index: 100
+  align-items: center
   
   
   &_active
@@ -29,6 +30,7 @@
     padding: 64px 20px
     background-color: $section_bg
     position: relative
+    max-height: 553px
     @media (max-width: 1215px)
       max-width: 980px
     @media (max-width: 992px)
@@ -38,10 +40,10 @@
     @media (max-width: 768px)
       max-width: 540px
     @media (max-width: 567px)
-      max-width: 410px
-      padding: 60px 12px 40px 12px
+      max-width: 420px
+      padding: 60px 17px 40px 17px
     @media (max-width: 420px)
-      max-width: 301px
+      max-width: 320px
     & .modal__close
       background-color: $color-white
       @media (max-width: 992px)
@@ -49,6 +51,7 @@
     & .forminvite__wrap
       margin: auto
       position: relative
+      padding-left: 0 // Правка от второго куратора
       &:after
         content: ''
         position: absolute

@@ -63,6 +63,10 @@ a
     padding-top: 13px
     display: block
     text-align: center
+    color: $color-white !important
+    &:hover
+      @media (min-width: 993px)
+        color: $color-white
 .input
   &:focus
     border: 1px solid $color-button
@@ -112,3 +116,9 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
   -webkit-appearance: none
 input[type='number']
   -moz-appearance: textfield
+.detail__link
+  color: $color-button !important
+  font-weight: 700
+  &:hover
+    @media (min-width: 993px)
+      color: lighten($color-button, 20%) !important

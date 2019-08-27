@@ -19,8 +19,10 @@
     padding-left: 16px
     padding-right: 1px
     text-align: left
+    width: 100%
   &-card
-    flex-basis: 25%
+    width: 25%
+    // width: 25%
     height: 251px
     vertical-align: center
     display: flex
@@ -28,10 +30,10 @@
     // justify-content: center
     align-items: flex-start
     @media (max-width: 1215px)
-      flex-basis: 50%
+      width: 50%
     @media (max-width: 768px)
       order: 0
-      flex-basis: 100%
+      width: 100%
     &:nth-child(1)
       @media (max-width: 1215px)
         order: 0
@@ -103,3 +105,4 @@
       line-height: 22px
       margin: 0
       letter-spacing: 0.47px
+      width: 100%

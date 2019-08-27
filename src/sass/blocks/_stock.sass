@@ -5,6 +5,7 @@
   &-slider
     &__item
       position: relative
+      outline: none
       // height: 612px
       
 
@@ -19,7 +20,7 @@
         position: static
         max-width: 1037px
         height: 500px
-        margin-left: auto
+        // margin-left: auto
       @media (max-width: 768px)
         height: 400px
       
@@ -98,6 +99,7 @@
   &__link
   display: inline-block
   color: $color-button
+  outline: none
 .slick-slide
   .detail-icon
     display: inline
@@ -110,3 +112,5 @@
     display: flex
     flex-direction: column-reverse
     align-items: center
+.stock-slider__buttons .detail__link
+  outline: none

@@ -1,4 +1,21 @@
 $(document).ready(function () {
+
+  // для ие, определяем padStart
+  if (!String.prototype.padStart) {
+    String.prototype.padStart = function padStart(targetLength, padString) {
+        targetLength = targetLength >> 0; //truncate if number, or convert non-number to 0;
+        padString = String(typeof padString !== 'undefined' ? padString : ' ');
+        if (this.length >= targetLength) {
+            return String(this);
+        } else {
+            targetLength = targetLength - this.length;
+            if (targetLength > padString.length) {
+                padString += padString.repeat(targetLength / padString.length); //append to original to ensure we are longer than needed
+            }
+            return padString.slice(0, targetLength) + String(this);
+        }
+    };
+  }
   // Открытие и закрытие бургер меню
   $('.toggle-button').on('click', function(e) {
     e.preventDefault;
@@ -41,7 +58,7 @@ $(document).ready(function () {
   $('.slick-dots').children().addClass('slick-dots__item');
   $(".slick-dots").wrap("<div class='container container-slider'></div>");
 
-  // Подключаем слайдер секции Акции
+  //Подключаем слайдер секции Акции
   $('.stock-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -52,6 +69,9 @@ $(document).ready(function () {
     appendDots: $('.stock-slider__dots'),
     customPaging : function(slider, i) {
         var thumb = $(slider.$slides[i]).data();
+        var x = "Browser CodeName: " + navigator.appCodeName;
+        console.log(x);
+        
         return '<a>'+(i+1).toString().padStart(2, '0')+'</a>';
     },
   });
